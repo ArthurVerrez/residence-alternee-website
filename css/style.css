@@ -74,7 +74,15 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #bea34d; }
 
 .colorlib-nav .top-menu {
-  padding: 28px 0; }
+  z-index:10;
+  padding: 6px 0;
+  position:fixed;
+  background-color:rgba(255,255,255,0.5);
+  width:100%; }
+
+#bouton_parcours_menu{
+  float:left;
+}
 
 .colorlib-nav #colorlib-logo {
   font-size: 24px;
@@ -260,7 +268,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #colorlib-hero {
   min-height: 700px;
-  background: #fff url(../images/loader.gif) no-repeat center center; }
+  background: #fff url(../images/loader.gif) no-repeat center center;
+  width:100%;
+  height:100%; }
   #colorlib-hero .btn {
     font-size: 24px; }
     #colorlib-hero .btn.btn-primary {
@@ -838,7 +848,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-footer {
   background: #0b162a;
   color: rgba(255, 255, 255, 0.5);
-  padding: 7em 0 4em 0; }
+  padding: 1em; }
   #colorlib-footer .colorlib-footer-links {
     padding: 0;
     margin: 0; }
