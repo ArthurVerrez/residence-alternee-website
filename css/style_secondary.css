@@ -115,7 +115,6 @@
 }
 
 .side-bar{
-  height:100%;
   width:200px;
   z-index:9;
   position:fixed;
@@ -201,4 +200,16 @@
 .side-bar-left li{
   margin-top:5px;
   padding:10px;
+}
+
+#next_button_container{
+  width:100%;
+  text-align: right;
+}
+#parcours_next{
+  z-index:100;
+  width:200px;
+  white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+  font-size:0.8em;
 }
