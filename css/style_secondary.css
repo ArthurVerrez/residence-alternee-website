@@ -218,3 +218,10 @@
   display:block;
   height:100%;
 }
+
+#canvas-acteurs{
+  width:400px;
+  height:400px;
+  background:grey;
+  margin:auto;
+}
