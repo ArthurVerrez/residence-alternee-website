@@ -1,14 +1,14 @@
 var canvas = document.getElementById('canvas-acteurs');
-canvas.setAttribute('height', window.innerHeight+"px");
-canvas.setAttribute('width',window.innerHeight+"px");
+canvas.style.height=window.innerHeight+"px";
+canvas.style.width=window.innerHeight+"px";
 var X = canvas.width / 2;
 var Y = canvas.height / 2;
 var R = X*(3/4);
 var R_points=4;
 
 var R_pcircle=(3/4)*R
-var width_arcs=15;
-var width_points=10;
+var width_arcs=canvas.width/50;
+var width_points=canvas.width/50;
 var width_connections=5;
 
 var ctx = canvas.getContext('2d');
@@ -79,8 +79,8 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
       if (cat_acteurs[i][0].length == 1) {
 
         var angle = cat_acteurs[i][0][0]*(2*Math.PI/n);
-        var X1 = X + (4*R/3)*Math.cos(angle);
-        var Y1 = Y + (4*R/3)*Math.sin(angle);
+        var X1 = X + (5*R/4)*Math.cos(angle);
+        var Y1 = Y + (5*R/4)*Math.sin(angle);
 
         ctx.beginPath();
         ctx.font = "30px Georgia";
@@ -95,8 +95,8 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         var angle1 = cat_acteurs[i][0][0]*(2*Math.PI/n);
         var angle2 = cat_acteurs[i][0][taille]*(2*Math.PI/n);
         var bissectrice1 = (angle2 - angle1)/2 + angle1;
-        var X1 = X + (4*R/3)*Math.cos(bissectrice1);
-        var Y1 = Y + (4*R/3)*Math.sin(bissectrice1);
+        var X1 = X + (5*R/4)*Math.cos(bissectrice1);
+        var Y1 = Y + (5*R/4)*Math.sin(bissectrice1);
 
         ctx.beginPath();
         ctx.font = "30px Georgia";
