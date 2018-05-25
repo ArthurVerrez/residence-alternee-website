@@ -76,7 +76,7 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
       }
       //Nom des catégories
 
-      if (cat_acteurs[i][0].length == 1) then {
+      if (cat_acteurs[i][0].length == 1) {
 
         var angle = cat_acteurs[i][0][0]*(2*Math.PI/n);
         var X1 = X + (4*R/3)*Math.cos(angle);
