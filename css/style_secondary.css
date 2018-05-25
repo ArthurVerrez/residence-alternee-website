@@ -216,13 +216,42 @@
 
 .full_height{
   height:100%;
+  text-align: center;
 }
 
 #canvas-acteurs{
+  margin-top:0;
   background:#dddddd;
+  float:left;
+
+}
+
+.total_center{
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%);
+  text-align: left;
+
+}
+
+.total_center a{
+  color:white;
+  font-family: 'Lato', sans-serif;
+  display:inline-block;
+  background-color: grey;
+  padding:10px;
+  margin-top:30px;
+
+  border-radius: 0px 10px 10px 0px;
+  opacity:0.7;
+}
+
+.total_center a:hover{
+  cursor: pointer;
+  opacity:1;
+}
+
+a.active{
+  background:black;
+  opacity:1;
 }
