@@ -215,7 +215,6 @@
 }
 
 .full_height{
-  display:block;
   height:100%;
 }
 
@@ -224,4 +223,6 @@
   height:400px;
   background:grey;
   margin:auto;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
 }
