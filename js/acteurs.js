@@ -1,14 +1,14 @@
 var canvas = document.getElementById('canvas-acteurs');
-canvas.setAttribute('height', window.innerHeight+"px");
-canvas.setAttribute('width',window.innerHeight+"px");
+canvas.style.height=window.innerHeight+"px";
+canvas.style.width=window.innerHeight+"px";
 var X = canvas.width / 2;
 var Y = canvas.height / 2;
 var R = X*(3/4);
 var R_points=4;
 
 var R_pcircle=(3/4)*R
-var width_arcs=15;
-var width_points=10;
+var width_arcs=canvas.width/50;
+var width_points=canvas.width/50;
 var width_connections=5;
 
 var ctx = canvas.getContext('2d');
@@ -47,6 +47,19 @@ function circle_arcs_2points(n,ctx,X,Y,R,i,j,width_connections){
 }
 
 
+function add_place_text(alpha){
+  if (alpha > 0 && alpha < Math.PI/2) {
+    return [-30,-30];
+  } else if (alpha >= Math.PI/2 && alpha < Math.PI) {
+    return [30,-30];
+  } else if (alpha >= Math.PI && alpha < (3/2)*Math.PI) {
+    return [30,30];
+  } else {
+    return [-30,30];
+  }
+}
+
+
 function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
 
 
@@ -76,11 +89,11 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
       }
       //Nom des catégories
 
-      if (cat_acteurs[i][0].length == 1) then {
+      if (cat_acteurs[i][0].length == 1) {
 
         var angle = cat_acteurs[i][0][0]*(2*Math.PI/n);
-        var X1 = X + (4*R/3)*Math.cos(angle);
-        var Y1 = Y + (4*R/3)*Math.sin(angle);
+        var X1 = X + (4*R/3)*Math.cos(angle) + add_place_text(angle)[0];
+        var Y1 = Y + (4*R/3)*Math.sin(angle) + add_place_text(angle)[1];
 
         ctx.beginPath();
         ctx.font = "30px Georgia";
@@ -95,8 +108,8 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         var angle1 = cat_acteurs[i][0][0]*(2*Math.PI/n);
         var angle2 = cat_acteurs[i][0][taille]*(2*Math.PI/n);
         var bissectrice1 = (angle2 - angle1)/2 + angle1;
-        var X1 = X + (4*R/3)*Math.cos(bissectrice1);
-        var Y1 = Y + (4*R/3)*Math.sin(bissectrice1);
+        var X1 = X + (4*R/3)*Math.cos(bissectrice1)+ add_place_text(bissectrice1)[0];
+        var Y1 = Y + (4*R/3)*Math.sin(bissectrice1)+ add_place_text(bissectrice1)[1];
 
         ctx.beginPath();
         ctx.font = "30px Georgia";
