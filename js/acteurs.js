@@ -40,7 +40,7 @@ function circle_points(n, ctx, X, Y, R){
     colors=['blue','red','green','yellow',"pink","magenta"];
     R_points=3;
     //ctx.fill();
-    R=R;
+    R=R*(3/4);
     for(i=0; i<n; i++){
         ctx.beginPath();
         ctx.arc(X+Math.cos(i*2*Math.PI/n)*R, Y+Math.sin(i*2*Math.PI/n)*R, R_points, 0, 2*Math.PI, false);
@@ -52,6 +52,7 @@ function circle_points(n, ctx, X, Y, R){
 
 
 function circle_arcs_points(n,ctx,X,Y,R){
+ R=R*(3/4);
  for(i=0; i<n; i++) {
    ctx.beginPath();
    var angle1 = i*(2*Math.PI/n);
@@ -85,8 +86,9 @@ var tab_acteurs=[["acteur 1", 0],["acteur 2", 0],["acteur 3", 1],["acteur 4", 2]
 
 
 var tab = initialize_canvas();
-//circle_arcs(1,tab[0],tab[1],tab[2],tab[3]);
+circle_arcs(6,tab[0],tab[1],tab[2],tab[3]);
+tab[0].strokeStyle="black";
 
 circle_points(19,tab[0],tab[1],tab[2],tab[3]);
 
-circle_arcs_points(3,tab[0],tab[1],tab[2],tab[3]);
+circle_arcs_points(5,tab[0],tab[1],tab[2],tab[3]);
