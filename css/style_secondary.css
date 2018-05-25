@@ -122,12 +122,13 @@
   padding:0;
   margin:0;
 
+  margin-top:100px;
+
 }
 
 .side-bar-inside{
   width:100%;
   text-align: center;
-  margin-top:100px;
 }
 
 .side-bar-left{
@@ -166,8 +167,9 @@
 .button-side-bar .button-fill{
   width:100%;
   font-family: 'Lato', sans-serif;
+  margin-top:15px;
+  padding:0;
 
-  margin-bottom:10px;
 }
 
 #side_bar_chrono{
@@ -184,6 +186,10 @@
 #parcours_ul{
   list-style-image: url('../images/ui/tick_empty.png');
 }
+
+
+
+
 
 #selected_parcours{
   list-style-image: url('../images/ui/tick_full.png');
@@ -205,6 +211,7 @@
 #next_button_container{
   width:100%;
   text-align: right;
+  margin-bottom: 10px;
 }
 #parcours_next{
   z-index:100;
@@ -254,4 +261,18 @@
 a.active{
   background:black;
   opacity:1;
+}
+
+.retract{
+  background:white;
+  width:40px;
+  border-radius: 10px 0px 0px 10px;
+  list-style-image: url('../images/ui/tick_empty.png');
+  transition: all 0.2s ease-in-out;
+}
+
+.retract:hover{
+  background:transparent;
+  width:200px;
+  list-style: none;
 }

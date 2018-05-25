@@ -92,8 +92,13 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
       if (cat_acteurs[i][0].length == 1) {
 
         var angle = cat_acteurs[i][0][0]*(2*Math.PI/n);
+<<<<<<< HEAD
         var X1 = X + (4*R/3)*Math.cos(angle) + add_place_text(angle)[0];
         var Y1 = Y + (4*R/3)*Math.sin(angle) + add_place_text(angle)[1];
+=======
+        var X1 = X + (5*R/4)*Math.cos(angle);
+        var Y1 = Y + (5*R/4)*Math.sin(angle);
+>>>>>>> d5b63b6128d4e725608ca85565bcc2ae5fb71a99
 
         ctx.beginPath();
         ctx.font = "30px Georgia";
@@ -108,8 +113,13 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         var angle1 = cat_acteurs[i][0][0]*(2*Math.PI/n);
         var angle2 = cat_acteurs[i][0][taille]*(2*Math.PI/n);
         var bissectrice1 = (angle2 - angle1)/2 + angle1;
+<<<<<<< HEAD
         var X1 = X + (4*R/3)*Math.cos(bissectrice1)+ add_place_text(bissectrice1)[0];
         var Y1 = Y + (4*R/3)*Math.sin(bissectrice1)+ add_place_text(bissectrice1)[1];
+=======
+        var X1 = X + (5*R/4)*Math.cos(bissectrice1);
+        var Y1 = Y + (5*R/4)*Math.sin(bissectrice1);
+>>>>>>> d5b63b6128d4e725608ca85565bcc2ae5fb71a99
 
         ctx.beginPath();
         ctx.font = "30px Georgia";
