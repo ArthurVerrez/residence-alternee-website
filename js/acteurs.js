@@ -20,9 +20,11 @@ var cat_acteurs=[[[0,1,2],"cat1","#0F1108"], [[3,4],"cat2","#025889"],
 
 //tab_acteurs[[nom,categorie d'acteur]]
 
-var tab_acteurs=["acteur 1","acteur 2","acteur 3","acteur 4","acteur 5","acteur 6","acteur 7","acteur 8","acteur 9","acteur 10"];
+var tab_acteurs=[["Philippe Latombe",0],["acteur 2",0],["acteur 3",0],["acteur 4",1],["acteur 5",1],["acteur 6",2],["acteur 7",3],["acteur 8",4],["acteur 9",4],["acteur 10",5]];
 
 var connexions=[];
+
+
 
 
 function circle_arcs_2points(n,ctx,X,Y,R,i,j,width_connections){
@@ -64,7 +66,7 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
 
 
 
-  n=tab_acteurs.length
+  n=tab_acteurs.length;
 
     //On affiche d'abord les arcs de cercle et les points
 
@@ -86,6 +88,8 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         ctx.fill();
         ctx.lineWidth = width_points;
         ctx.stroke();
+
+
       }
       //Nom des catégories
 
@@ -126,7 +130,19 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
 
     ctx.strokeStyle="black";
     for(i=0; i<connexions.length;i++){
-      circle_arcs_2points(n,ctx,X,Y,R,connexions[i][0],connexions[i][1],width_connections)
+      circle_arcs_2points(n,ctx,X,Y,R,connexions[i][0],connexions[i][1],width_connections);
+      for(j=0; j<2;j++){
+
+        var Angle = connexions[i][j]*(2*Math.PI/n);
+        var XA = X + (6*R_pcircle/5)*Math.cos(Angle);//+ add_place_text(angle))[0];
+        var YA = Y + (6*R_pcircle/5)*Math.sin(Angle);//+ add_place_text(angle))[1];
+
+        ctx.beginPath();
+        ctx.font = "30px Georgia";
+        ctx.fillStyle = cat_acteurs[tab_acteurs[connexions[i][j]][1]][2];
+        ctx.fillText(tab_acteurs[connexions[i][j]][0],XA,YA);
+        ctx.stroke();
+      }
     }
 
 
