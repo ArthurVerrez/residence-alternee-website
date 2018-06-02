@@ -200,11 +200,13 @@ function is_on_actor(i,mx,my,n,rayon){
   return is_inside_circle(mx,my,rayon,coordX(n,i),coordY(n,i));
 }
 
-var activate=0;
+var activate4=0;
+var activate2=0;
+var activate3=0;
 
 document.getElementById('noeud1').onmouseenter=function(e){
   var connexions=[[6,2],[6,3],[6,7]];
-
+  document.getElementById('noeud3_acteurs').style.background="grey";
   clear_acteurs();
   trace_acteurs(cat_acteurs,tab_acteurs,connexions);
 };
@@ -217,6 +219,8 @@ document.getElementById('noeud1').onclick=function(e){
   document.getElementById('noeud1').style.background="black";
   document.getElementById('noeud1').style.opacity=1;
   document.getElementById('noeud3_acteurs').style.background="grey";
+  document.getElementById('noeud2').style.background="grey";
+  document.getElementById('noeud3').style.background="grey";
 } else {
   activate4=0;
   activate2=0;
@@ -235,6 +239,7 @@ document.getElementById('noeud1').onmouseleave=function(e){
 
   }else{
     var connexions=[];
+    document.getElementById('noeud3_acteurs').style.background="white";
     clear_acteurs();
     trace_acteurs(cat_acteurs,tab_acteurs,connexions);
   }
@@ -255,6 +260,8 @@ document.getElementById('noeud2').onclick=function(e){
   activate3=0;
   document.getElementById('noeud2').style.background="black";
   document.getElementById('noeud2').style.opacity=1;
+  document.getElementById('noeud1').style.background="grey";
+  document.getElementById('noeud3').style.background="grey";
 } else {
   activate2=0;
   activate4=0;
@@ -292,6 +299,8 @@ document.getElementById('noeud3').onclick=function(e){
   activate4=0;
   document.getElementById('noeud3').style.background="black";
   document.getElementById('noeud3').style.opacity=1;
+  document.getElementById('noeud1').style.background="grey";
+  document.getElementById('noeud2').style.background="grey";
 } else {
   activate3 =0;
   activate2=0;
