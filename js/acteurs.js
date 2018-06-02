@@ -15,16 +15,16 @@ var ctx = canvas.getContext('2d');
 
 
 //Il faut absolument que les acteurs d'une même catégorie se suivent
-var cat_acteurs=[[[0,1,2],"cat1","#0F1108"], [[3,4],"cat2","#025889"],
-[[5],"cat3","#813405"], [[6],"cat4","#518c51"], [[7,8],"cat5","#9b9679"], [[9],"cat6","#48395b"]];
+var cat_acteurs=[[[0,1,2],"Domaine Juridique","#0F1108"], [[3,4],"Politique","#025889"],
+[[5,6],"Scientifiques","#813405"],[[7,8],"Associations","#9b9679"], [[9],"Famille","#48395b"]];
 
 //tab_acteurs[[nom,categorie d'acteur]]
 
-var tab_acteurs=[["Philippe Latombe",0],["acteur 2",0],["acteur 3",0],["acteur 4",1],["acteur 5",1],["acteur 6",2],["acteur 7",3],["acteur 8",4],["acteur 9",4],["acteur 10",5]];
+var tab_acteurs=[["JAF",0],["Médiation",0],["Avocats",0],["Philippe Latombe",1],["Opposition",1],["Pour la RA",2],["Contre la RA",2],["Associations féministes",3],["Associations de défense des pères",3],["Parents",4]];
 
 var connexions=[];
-
-
+document.getElementById('noeud3_acteurs').style.background="white";
+document.getElementById('noeud3_acteurs').style.opacity=1;
 
 
 function circle_arcs_2points(n,ctx,X,Y,R,i,j,width_connections){
@@ -138,7 +138,7 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         var YA = Y + (6*R_pcircle/5)*Math.sin(Angle);//+ add_place_text(angle))[1];
 
         ctx.beginPath();
-        ctx.font = "30px Georgia";
+        ctx.font = "20px Georgia";
         ctx.fillStyle = cat_acteurs[tab_acteurs[connexions[i][j]][1]][2];
         ctx.fillText(tab_acteurs[connexions[i][j]][0],XA,YA);
         ctx.stroke();
@@ -210,14 +210,102 @@ document.getElementById('noeud1').onmouseenter=function(e){
 };
 
 document.getElementById('noeud1').onclick=function(e){
-  activate=1;
+  if(activate4==0) {
+  activate4=1;
+  activate2=0;
+  activate3=0;
   document.getElementById('noeud1').style.background="black";
   document.getElementById('noeud1').style.opacity=1;
+  document.getElementById('noeud3_acteurs').style.background="grey";
+} else {
+  activate4=0;
+  activate2=0;
+  activate3=0;
+  document.getElementById('noeud1').style.background="grey";
+  document.getElementById('noeud1').style.opacity=1;
+  clear_acteur();
+}
 };
 
 document.getElementById('noeud1').onmouseleave=function(e){
-  if(activate==1){
+  if(activate4==1){
     var connexions=[[6,2],[6,3],[6,7]];
+    clear_acteurs();
+    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+
+  }else{
+    var connexions=[];
+    clear_acteurs();
+    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+  }
+
+};
+
+document.getElementById('noeud2').onmouseenter=function(e){
+  var connexions=[[0,2],[0,1],[0,7],[1,5]];
+
+  clear_acteurs();
+  trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+};
+
+document.getElementById('noeud2').onclick=function(e){
+  if (activate2 == 0) {
+  activate2=1;
+  activate4=0;
+  activate3=0;
+  document.getElementById('noeud2').style.background="black";
+  document.getElementById('noeud2').style.opacity=1;
+} else {
+  activate2=0;
+  activate4=0;
+  activate3=0;
+  document.getElementById('noeud2').style.background="grey";
+  document.getElementById('noeud2').style.opacity=1;
+}
+};
+
+document.getElementById('noeud2').onmouseleave=function(e){
+  if(activate2==1){
+    var connexions=[[0,2],[0,1],[0,7],[1,5]];
+    clear_acteurs();
+    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+
+  }else{
+    var connexions=[];
+    clear_acteurs();
+    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+  }
+
+};
+
+document.getElementById('noeud3').onmouseenter=function(e){
+  var connexions=[[3,0],[4,1],[3,7],[4,9]];
+
+  clear_acteurs();
+  trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+};
+
+document.getElementById('noeud3').onclick=function(e){
+  if(activate3==0){
+  activate3 =1;
+  activate2=0;
+  activate4=0;
+  document.getElementById('noeud3').style.background="black";
+  document.getElementById('noeud3').style.opacity=1;
+} else {
+  activate3 =0;
+  activate2=0;
+  activate4=0;
+  document.getElementById('noeud3').style.background="grey";
+  document.getElementById('noeud3').style.opacity=1;
+
+
+}
+};
+
+document.getElementById('noeud3').onmouseleave=function(e){
+  if(activate3==1){
+    var connexions=[[3,0],[4,1],[3,7],[4,9]];
     clear_acteurs();
     trace_acteurs(cat_acteurs,tab_acteurs,connexions);
 
