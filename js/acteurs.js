@@ -33,15 +33,18 @@ document.getElementById('noeud4_acteurs').style.background="white";
 document.getElementById('noeud4_acteurs').style.opacity=1;
 
 function ecrit_acteur(id){
-  var texte = document.getElementById(id);
-  texte.innerHTML = "test lol"
+  var object = document.getElementById(id);
+  var test = document.getElementById('noeud1')
+  object.textContent = "test";
+  
+  test.insertAdjacentElement("afterend",object);
   //texte.innerHTML.fontcolor("red");
 
 }
 
 function erase_acteur(id){
-  var texte = document.getElementById(id);
-  texte.innerHTML = ""
+  var object = document.getElementById(id);
+  object.textContent = ""
 }
 
 
