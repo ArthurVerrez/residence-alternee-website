@@ -23,8 +23,26 @@ var cat_acteurs=[[[0,1,2],"Domaine Juridique","#0F1108"], [[3,4],"Politique","#0
 var tab_acteurs=[["JAF",0],["Médiation",0],["Avocats",0],["Philippe Latombe",1],["Opposition",1],["Pour la RA",2],["Contre la RA",2],["Associations féministes",3],["Associations de défense des pères",3],["Parents",4]];
 
 var connexions=[];
+document.getElementById('noeud1_acteurs').style.background="white";
+document.getElementById('noeud1_acteurs').style.opacity=1;
+document.getElementById('noeud2_acteurs').style.background="white";
+document.getElementById('noeud2_acteurs').style.opacity=1;
 document.getElementById('noeud3_acteurs').style.background="white";
 document.getElementById('noeud3_acteurs').style.opacity=1;
+document.getElementById('noeud4_acteurs').style.background="white";
+document.getElementById('noeud4_acteurs').style.opacity=1;
+
+function ecrit_acteur(id){
+  var texte = document.getElementById(id);
+  texte.innerHTML = "test lol"
+  //texte.innerHTML.fontcolor("red");
+
+}
+
+function erase_acteur(id){
+  var texte = document.getElementById(id);
+  texte.innerHTML = ""
+}
 
 
 function circle_arcs_2points(n,ctx,X,Y,R,i,j,width_connections){
@@ -206,7 +224,7 @@ var activate3=0;
 
 document.getElementById('noeud1').onmouseenter=function(e){
   var connexions=[[6,2],[6,3],[6,7]];
-  document.getElementById('noeud3_acteurs').style.background="grey";
+  document.getElementById('noeud1_acteurs').style.background="grey";
   clear_acteurs();
   trace_acteurs(cat_acteurs,tab_acteurs,connexions);
 };
@@ -218,9 +236,10 @@ document.getElementById('noeud1').onclick=function(e){
   activate3=0;
   document.getElementById('noeud1').style.background="black";
   document.getElementById('noeud1').style.opacity=1;
-  document.getElementById('noeud3_acteurs').style.background="grey";
+  document.getElementById('noeud1_acteurs').style.background="grey";
   document.getElementById('noeud2').style.background="grey";
   document.getElementById('noeud3').style.background="grey";
+  ecrit_acteur('noeud1_acteurs');
 } else {
   activate4=0;
   activate2=0;
@@ -239,7 +258,7 @@ document.getElementById('noeud1').onmouseleave=function(e){
 
   }else{
     var connexions=[];
-    document.getElementById('noeud3_acteurs').style.background="white";
+    document.getElementById('noeud1_acteurs').style.background="white";
     clear_acteurs();
     trace_acteurs(cat_acteurs,tab_acteurs,connexions);
   }
@@ -262,6 +281,7 @@ document.getElementById('noeud2').onclick=function(e){
   document.getElementById('noeud2').style.opacity=1;
   document.getElementById('noeud1').style.background="grey";
   document.getElementById('noeud3').style.background="grey";
+  document.getElementById('noeud1_acteurs').style.background="white";
 } else {
   activate2=0;
   activate4=0;
@@ -301,6 +321,7 @@ document.getElementById('noeud3').onclick=function(e){
   document.getElementById('noeud3').style.opacity=1;
   document.getElementById('noeud1').style.background="grey";
   document.getElementById('noeud2').style.background="grey";
+  document.getElementById('noeud1_acteurs').style.background="white";
 } else {
   activate3 =0;
   activate2=0;
