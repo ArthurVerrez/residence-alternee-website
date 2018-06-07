@@ -24,18 +24,19 @@
 }
 .button-text {
   padding: 0 25px;
-  line-height: 56px;
+  line-height: 45px;
   letter-spacing: .1em;
+  font-size:12px;
 }
 .button-inside {
   width: 0px;
-  height: 54px;
+  height: 45px;
   margin: 0;
   float: left;
   position: absolute;
   top: 1px;
   left: 50%;
-  line-height: 54px;
+  line-height: 45px;
   color: #445561;
   background: #fff;
   text-align: center;
@@ -62,6 +63,7 @@
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
   transform: translateX(50%);
+  font-size:12px;
 }
 
 
@@ -133,7 +135,7 @@
 
 .side-bar-left{
   height:100%;
-  width:200px;
+  width:250px;
   z-index:9;
   position:fixed;
   left:0;
@@ -148,7 +150,7 @@
   color:black;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  font-size: 0.8em;
+  font-size: 13px;
   background-color: white;
   border-radius: 0px 25px 25px 0px;
   white-space: nowrap;
@@ -178,12 +180,9 @@
 #side_bar_actor{
 }
 
-.scroll_appear, .scroll_appear2{
-  visibility: hidden;
-  opacity:0;
-}
 
-#parcours_ul{
+
+.parcours_ul{
   list-style-image: url('../images/ui/tick_empty.png');
 }
 
@@ -209,16 +208,18 @@
 }
 
 #next_button_container{
-  width:100%;
   text-align: right;
-  margin-bottom: 10px;
 }
 #parcours_next{
   z-index:100;
-  width:200px;
   white-space: nowrap;
   font-family: 'Lato', sans-serif;
   font-size:0.8em;
+}
+
+#parcours_next .button-fill{
+
+  padding:0px 20px;
 }
 
 .full_height{
@@ -268,7 +269,7 @@ a.active{
   width:40px;
   border-radius: 10px 0px 0px 10px;
   list-style-image: url('../images/ui/tick_empty.png');
-  transition: all 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
 .retract:hover{
@@ -276,3 +277,9 @@ a.active{
   width:200px;
   list-style: none;
 }
+
+.scroll_appear, .scroll_appear2, .scroll_appear3{
+  visibility: hidden;
+  opacity:0;
+}
+

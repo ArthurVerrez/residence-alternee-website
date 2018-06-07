@@ -15,7 +15,7 @@
 body {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.7;
   color: #828282;
   background: #fff; 
@@ -76,18 +76,21 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   background: #1b2b42; }
 
-.colorlib-nav .top-menu {
+.contro-nav .top-menu {
   z-index:10;
-  padding: 6px 0;
+  padding: 0;
   position:fixed;
   background-color:rgba(255,255,255,1);
   width:100%;
   font-family: 'Lato', sans-serif;
   opacity: 0;
   visibility: hidden;
+  font-size:15px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  
    }
 
-   .colorlib-nav .top-menu-appeared {
+   .contro-nav .top-menu-appeared {
   z-index:10;
   padding: 6px 0;
   background-color:rgba(255,255,255,1);
@@ -98,7 +101,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
-.colorlib-nav #colorlib-logo {
+.contro-nav #contro-logo {
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -106,40 +109,40 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: bold;
   font-weight: 700;
   font-family: "Playfair Display", Georgia, serif; }
-  .colorlib-nav #colorlib-logo a {
+  .contro-nav #contro-logo a {
     color: #1b2b42; }
-    .colorlib-nav #colorlib-logo a span {
+    .contro-nav #contro-logo a span {
       color: #000; }
 
-.colorlib-nav a {
+.contro-nav a {
   padding: 5px 10px;
   color: #000; }
 
 @media screen and (max-width: 768px) {
-  .colorlib-nav .menu-1 {
+  .contro-nav .menu-1 {
     display: none; } }
 
-.colorlib-nav ul {
+.contro-nav ul {
   padding: 0;
   margin: 5px 0 0 0; }
-  .colorlib-nav ul li {
+  .contro-nav ul li {
     padding: 0;
     margin: 0;
     list-style: none;
     display: inline;
     text-transform: uppercase; }
-    .colorlib-nav ul li a {
+    .contro-nav ul li a {
       font-size: 0.8em;
       padding: 30px 15px;
       color: rgba(0, 0, 0, 0.7);
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-      .colorlib-nav ul li a:hover, .colorlib-nav ul li a:focus, .colorlib-nav ul li a:active {
+      .contro-nav ul li a:hover, .contro-nav ul li a:focus, .contro-nav ul li a:active {
         color: black; }
-    .colorlib-nav ul li.has-dropdown {
+    .contro-nav ul li.has-dropdown {
       position: relative; }
-      .colorlib-nav ul li.has-dropdown .dropdown {
+      .contro-nav ul li.has-dropdown .dropdown {
         width: 140px;
         -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
@@ -160,7 +163,7 @@ h1, h2, h3, h4, h5, h6, figure {
         -webkit-transition: 0s;
         -o-transition: 0s;
         transition: 0s; }
-        .colorlib-nav ul li.has-dropdown .dropdown:before {
+        .contro-nav ul li.has-dropdown .dropdown:before {
           bottom: 100%;
           left: 40px;
           border: solid transparent;
@@ -172,12 +175,12 @@ h1, h2, h3, h4, h5, h6, figure {
           border-bottom-color: #000;
           border-width: 8px;
           margin-left: -8px; }
-        .colorlib-nav ul li.has-dropdown .dropdown li {
+        .contro-nav ul li.has-dropdown .dropdown li {
           display: block;
           margin-bottom: 7px; }
-          .colorlib-nav ul li.has-dropdown .dropdown li:last-child {
+          .contro-nav ul li.has-dropdown .dropdown li:last-child {
             margin-bottom: 0; }
-          .colorlib-nav ul li.has-dropdown .dropdown li a {
+          .contro-nav ul li.has-dropdown .dropdown li a {
             padding: 2px 0;
             display: block;
             color: #999999;
@@ -185,14 +188,14 @@ h1, h2, h3, h4, h5, h6, figure {
             text-transform: none;
             font-size: 13px;
             letter-spacing: 0; }
-            .colorlib-nav ul li.has-dropdown .dropdown li a:hover {
+            .contro-nav ul li.has-dropdown .dropdown li a:hover {
               color: #fff; }
-      .colorlib-nav ul li.has-dropdown:hover a, .colorlib-nav ul li.has-dropdown:focus a {
+      .contro-nav ul li.has-dropdown:hover a, .contro-nav ul li.has-dropdown:focus a {
         color: #000; }
-    .colorlib-nav ul li.btn-cta a {
+    .contro-nav ul li.btn-cta a {
       padding: 30px 0px !important;
       color: #fff; }
-      .colorlib-nav ul li.btn-cta a span {
+      .contro-nav ul li.btn-cta a span {
         background: #1b2b42;
         padding: 10px 20px;
         display: -moz-inline-stack;
@@ -206,23 +209,23 @@ h1, h2, h3, h4, h5, h6, figure {
         -moz-border-radius: 100px;
         -ms-border-radius: 100px;
         border-radius: 100px; }
-      .colorlib-nav ul li.btn-cta a:hover span {
+      .contro-nav ul li.btn-cta a:hover span {
         -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75); }
-    .colorlib-nav ul li.active > a {
+    .contro-nav ul li.active > a {
       color: #1e252b;
       text-decoration: underline;
       position: relative; }
 
-#colorlib-counter,
-.colorlib-bg {
+#contro-counter,
+.contro-bg {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative; }
-  #colorlib-counter .overlay,
-  .colorlib-bg .overlay {
+  #contro-counter .overlay,
+  .contro-bg .overlay {
     z-index: 0;
     position: absolute;
     bottom: 0;
@@ -231,12 +234,12 @@ h1, h2, h3, h4, h5, h6, figure {
     right: 0;
     background: rgba(0, 0, 0, 0.7); }
 
-.colorlib-video {
+.contro-video {
   overflow: hidden; }
   @media screen and (max-width: 992px) {
-    .colorlib-video {
+    .contro-video {
       height: 450px; } }
-  .colorlib-video a {
+  .contro-video a {
     z-index: 1001;
     position: absolute;
     top: 50%;
@@ -257,12 +260,12 @@ h1, h2, h3, h4, h5, h6, figure {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-    .colorlib-video a i {
+    .contro-video a i {
       text-align: center;
       display: table-cell;
       vertical-align: middle;
       font-size: 40px; }
-  .colorlib-video .overlay {
+  .contro-video .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -272,9 +275,9 @@ h1, h2, h3, h4, h5, h6, figure {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
-  .colorlib-video:hover .overlay {
+  .contro-video:hover .overlay {
     background: rgba(0, 0, 0, 0.7); }
-  .colorlib-video:hover a {
+  .contro-video:hover a {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -282,29 +285,29 @@ h1, h2, h3, h4, h5, h6, figure {
     transform: scale(1.1); }
 
 
-#colorlib-hero {
+#contro-hero {
   min-height: 700px;
   background: #fff url(../images/loader.gif) no-repeat center center;
   width:100%;
   height:100%; }
-  #colorlib-hero .btn {
+  #contro-hero .btn {
     font-size: 24px; }
-    #colorlib-hero .btn.btn-primary {
+    #contro-hero .btn.btn-primary {
       padding: 14px 30px !important; }
-  #colorlib-hero .flexslider {
+  #contro-hero .flexslider {
     border: none;
     z-index: 1;
     margin-bottom: 0; }
-    #colorlib-hero .flexslider .slides {
+    #contro-hero .flexslider .slides {
       position: relative;
       overflow: hidden; }
-      #colorlib-hero .flexslider .slides li {
+      #contro-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         min-height: 700px;
         position: relative; }
-        #colorlib-hero .flexslider .slides li:after {
+        #contro-hero .flexslider .slides li:after {
           position: absolute;
           top: 0;
           bottom: 0;
@@ -313,22 +316,22 @@ h1, h2, h3, h4, h5, h6, figure {
           content: '';
           background: rgba(0, 0, 0, 0.0);
           z-index: 1; }
-    #colorlib-hero .flexslider .flex-control-nav {
+    #contro-hero .flexslider .flex-control-nav {
       bottom: 40px;
       z-index: 1000; }
-      #colorlib-hero .flexslider .flex-control-nav li a {
+      #contro-hero .flexslider .flex-control-nav li a {
         background: rgba(255, 255, 255, 0.2);
         -webkit-box-shadow: none;
         box-shadow: none;
         width: 12px;
         height: 12px;
         cursor: pointer; }
-        #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
+        #contro-hero .flexslider .flex-control-nav li a.flex-active {
           cursor: pointer;
           background: rgba(255, 255, 255, 0.7); }
-    #colorlib-hero .flexslider .flex-direction-nav {
+    #contro-hero .flexslider .flex-direction-nav {
       display: none; }
-    #colorlib-hero .flexslider .slider-text {
+    #contro-hero .flexslider .slider-text {
 
       font-family: 'Lato', sans-serif;
 
@@ -336,16 +339,16 @@ h1, h2, h3, h4, h5, h6, figure {
       opacity: 0;
       min-height: 700px;
       z-index: 9; }
-      #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+      #contro-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
         min-height: 700px;
         background-color:rgba(0,0,0,0.5); }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #contro-hero .flexslider .slider-text > .slider-text-inner h1, #contro-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
           color: white; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+        #contro-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 44px;
           line-height: 1.3;
@@ -354,77 +357,77 @@ h1, h2, h3, h4, h5, h6, figure {
           letter-spacing: 1px;
           font-family: 'Lora', serif; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+            #contro-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 30px; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #contro-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 20px;
           line-height: 1.5;
           margin-bottom: 30px; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
+        #contro-hero .flexslider .slider-text > .slider-text-inner .heading-section {
           font-size: 50px; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+        #contro-hero .flexslider .slider-text > .slider-text-inner .btn {
           padding: 15px 30px;
           background: #31486f !important;
           color: #fff;
           border: none !important;
           font-size: 18px; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
+          #contro-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
             background: #1b2b42 !important;
             -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .form-inline .form-group {
+        #contro-hero .flexslider .slider-text > .slider-text-inner .form-inline .form-group {
           width: 100% !important;
           margin-bottom: 10px; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner .form-inline .form-group .form-control {
+          #contro-hero .flexslider .slider-text > .slider-text-inner .form-inline .form-group .form-control {
             width: 100%;
             background: #fff;
             border: none; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .colorlib-lead {
+        #contro-hero .flexslider .slider-text > .slider-text-inner .contro-lead {
           font-size: 20px;
           color: #fff; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner .colorlib-lead .icon-heart {
+          #contro-hero .flexslider .slider-text > .slider-text-inner .contro-lead .icon-heart {
             color: #d9534f; }
 
-.colorlib-bg-section {
+.contro-bg-section {
   background: rgba(0, 0, 0, 0.05); }
 
-#colorlib-about,
-#colorlib-practice,
-#colorlib-testimonial,
-#colorlib-started,
-#colorlib-blog,
-#colorlib-contact,
-#colorlib-footer {
+#contro-about,
+#contro-practice,
+#contro-testimonial,
+#contro-started,
+#contro-blog,
+#contro-contact,
+#contro-footer {
   padding: 7em 0;
   clear: both;
   font-family: 'Roboto', sans-serif;  }
   @media screen and (max-width: 768px) {
-    #colorlib-about,
-    #colorlib-practice,
-    #colorlib-testimonial,
-    #colorlib-started,
-    #colorlib-blog,
-    #colorlib-contact,
-    #colorlib-footer {
+    #contro-about,
+    #contro-practice,
+    #contro-testimonial,
+    #contro-started,
+    #contro-blog,
+    #contro-contact,
+    #contro-footer {
       padding: 3em 0; } }
 
-#colorlib-counter {
+#contro-counter {
   padding: 4em 0;
   clear: both; }
 
-.colorlib-counters {
+.contro-counters {
   padding: 3em 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
-  .colorlib-counters .icon {
+  .contro-counters .icon {
     width: 100px;
     height: 100px;
     display: table;
     margin: 0 auto;
     margin-bottom: 30px; }
-    .colorlib-counters .icon i {
+    .contro-counters .icon i {
       display: table-cell;
       vertical-align: middle;
       width: 100px;
@@ -436,9 +439,9 @@ h1, h2, h3, h4, h5, h6, figure {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       border-radius: 50%; }
-  .colorlib-counters .counter-wrap {
+  .contro-counters .counter-wrap {
     border: 1px solid red !important; }
-  .colorlib-counters .colorlib-counter {
+  .contro-counters .contro-counter {
     font-size: 40px;
     display: block;
     color: white;
@@ -446,7 +449,7 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
-  .colorlib-counters .colorlib-counter-label {
+  .contro-counters .contro-counter-label {
     color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     font-size: 14px;
@@ -454,9 +457,9 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 2em;
     display: block; }
 
-#colorlib-intro,
-#colorlib-content,
-#colorlib-consult {
+#contro-intro,
+#contro-content,
+#contro-consult {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -469,18 +472,18 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left; }
 
-#colorlib-content .video, #colorlib-content .choose,
-#colorlib-consult .video,
-#colorlib-consult .choose {
+#contro-content .video, #contro-content .choose,
+#contro-consult .video,
+#contro-consult .choose {
   display: inline-block; }
   @media screen and (max-width: 768px) {
-    #colorlib-content .video, #colorlib-content .choose,
-    #colorlib-consult .video,
-    #colorlib-consult .choose {
+    #contro-content .video, #contro-content .choose,
+    #contro-consult .video,
+    #contro-consult .choose {
       width: 100% !important; } }
 
-#colorlib-content .video,
-#colorlib-consult .video {
+#contro-content .video,
+#contro-consult .video {
   display: table;
   width: 50%;
   background-size: cover;
@@ -497,22 +500,22 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap; }
 
-#colorlib-content .choose,
-#colorlib-consult .choose {
+#contro-content .choose,
+#contro-consult .choose {
   width: 50%;
   padding: 40px 40px; }
 
-#colorlib-content .choose-form,
-#colorlib-consult .choose-form {
+#contro-content .choose-form,
+#contro-consult .choose-form {
   background: #31486f; }
-  #colorlib-content .choose-form .colorlib-heading,
-  #colorlib-consult .choose-form .colorlib-heading {
+  #contro-content .choose-form .contro-heading,
+  #contro-consult .choose-form .contro-heading {
     margin-bottom: 40px; }
-    #colorlib-content .choose-form .colorlib-heading h2,
-    #colorlib-consult .choose-form .colorlib-heading h2 {
+    #contro-content .choose-form .contro-heading h2,
+    #contro-consult .choose-form .contro-heading h2 {
       color: #fff; }
-  #colorlib-content .choose-form .form-control,
-  #colorlib-consult .choose-form .form-control {
+  #contro-content .choose-form .form-control,
+  #contro-consult .choose-form .form-control {
     -webkit-box-shadow: none;
     box-shadow: none;
     background: transparent;
@@ -520,9 +523,9 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 20px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8); }
-    #colorlib-content .choose-form .form-control:active, #colorlib-content .choose-form .form-control:focus,
-    #colorlib-consult .choose-form .form-control:active,
-    #colorlib-consult .choose-form .form-control:focus {
+    #contro-content .choose-form .form-control:active, #contro-content .choose-form .form-control:focus,
+    #contro-consult .choose-form .form-control:active,
+    #contro-consult .choose-form .form-control:focus {
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none;
@@ -532,7 +535,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-color: #31486f !important;
   font-size: 16px; }
 
-#colorlib-intro {
+#contro-intro {
   z-index: 0;
   padding-bottom: 7em; }
 
@@ -599,10 +602,10 @@ h1, h2, h3, h4, h5, h6, figure {
     .services:hover .icon i, .services:focus .icon i {
       color: #1b2b42; }
 
-.colorlib-social-icons {
+.contro-social-icons {
   margin: 0;
   padding: 0; }
-  .colorlib-social-icons li {
+  .contro-social-icons li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -610,7 +613,7 @@ h1, h2, h3, h4, h5, h6, figure {
     display: inline-block;
     zoom: 1;
     *display: inline; }
-    .colorlib-social-icons li a {
+    .contro-social-icons li a {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
@@ -618,18 +621,18 @@ h1, h2, h3, h4, h5, h6, figure {
       color: #1b2b42;
       padding-left: 10px;
       padding-right: 10px; }
-      .colorlib-social-icons li a i {
+      .contro-social-icons li a i {
         font-size: 20px; }
 
-.colorlib-contact-info ul {
+.contro-contact-info ul {
   padding: 0;
   margin: 0; }
-  .colorlib-contact-info ul li {
+  .contro-contact-info ul li {
     padding: 0 0 0 40px;
     margin: 0 0 30px 0;
     list-style: none;
     position: relative; }
-    .colorlib-contact-info ul li:before {
+    .contro-contact-info ul li:before {
       color: #1b2b42;
       position: absolute;
       left: 0;
@@ -644,16 +647,16 @@ h1, h2, h3, h4, h5, h6, figure {
       /* Better Font Rendering =========== */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-    .colorlib-contact-info ul li.address:before {
+    .contro-contact-info ul li.address:before {
       font-size: 30px;
       content: "\e9d1"; }
-    .colorlib-contact-info ul li.phone:before {
+    .contro-contact-info ul li.phone:before {
       font-size: 23px;
       content: "\e9f4"; }
-    .colorlib-contact-info ul li.email:before {
+    .contro-contact-info ul li.email:before {
       font-size: 23px;
       content: "\e9da"; }
-    .colorlib-contact-info ul li.url:before {
+    .contro-contact-info ul li.url:before {
       font-size: 23px;
       content: "\e9af"; }
 
@@ -662,97 +665,97 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left; }
 
-.colorlib-heading {
+.contro-heading {
   margin-bottom: 5em; }
-  .colorlib-heading.colorlib-heading-sm {
+  .contro-heading.contro-heading-sm {
     margin-bottom: 2em; }
-  .colorlib-heading h2 {
+  .contro-heading h2 {
     font-size: 40px;
     margin-bottom: 20px;
     line-height: 1.5;
     color: #000;
     font-weight: 400; }
-  .colorlib-heading p {
+  .contro-heading p {
     font-size: 18px;
     line-height: 1.5;
     color: #828282; }
-  .colorlib-heading span {
+  .contro-heading span {
     display: block;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px; }
-  .colorlib-heading.colorlib-heading2 h2 {
+  .contro-heading.contro-heading2 h2 {
     font-size: 60px;
     font-weight: 700; }
-  .colorlib-heading.colorlib-heading2 p {
+  .contro-heading.contro-heading2 p {
     font-size: 24px;
     margin-bottom: 40px; }
 
-#colorlib-testimonial .testimony-slide {
+#contro-testimonial .testimony-slide {
   text-align: center; }
-  #colorlib-testimonial .testimony-slide span {
+  #contro-testimonial .testimony-slide span {
     font-size: 18px;
     font-weight: 700;
     display: block;
     color: #000; }
-  #colorlib-testimonial .testimony-slide figure {
+  #contro-testimonial .testimony-slide figure {
     margin-bottom: 10px;
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
     *display: inline; }
-    #colorlib-testimonial .testimony-slide figure img {
+    #contro-testimonial .testimony-slide figure img {
       width: 140px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       border-radius: 50%; }
-  #colorlib-testimonial .testimony-slide blockquote {
+  #contro-testimonial .testimony-slide blockquote {
     border: none;
     margin: 30px auto;
     width: 70%;
     position: relative;
     padding: 0; }
     @media screen and (max-width: 992px) {
-      #colorlib-testimonial .testimony-slide blockquote {
+      #contro-testimonial .testimony-slide blockquote {
         width: 100%; } }
 
-#colorlib-testimonial .arrow-thumb {
+#contro-testimonial .arrow-thumb {
   position: absolute;
   top: 40%;
   display: block;
   width: 100%; }
-  #colorlib-testimonial .arrow-thumb a {
+  #contro-testimonial .arrow-thumb a {
     font-size: 32px;
     color: #dadada; }
-    #colorlib-testimonial .arrow-thumb a:hover, #colorlib-testimonial .arrow-thumb a:focus, #colorlib-testimonial .arrow-thumb a:active {
+    #contro-testimonial .arrow-thumb a:hover, #contro-testimonial .arrow-thumb a:focus, #contro-testimonial .arrow-thumb a:active {
       text-decoration: none; }
 
-#colorlib-testimonial .owl-theme .owl-dots .owl-dot.active span, #colorlib-testimonial .owl-theme .owl-dots .owl-dot:hover span {
+#contro-testimonial .owl-theme .owl-dots .owl-dot.active span, #contro-testimonial .owl-theme .owl-dots .owl-dot:hover span {
   background: #1b2b42; }
 
-#colorlib-testimonial .owl-theme .owl-dots .owl-dot span {
+#contro-testimonial .owl-theme .owl-dots .owl-dot span {
   background: #31486f; }
 
-.colorlib-staff {
+.contro-staff {
   text-align: center;
   margin-bottom: 30px; }
-  .colorlib-staff img {
+  .contro-staff img {
     width: 100%;
     margin-bottom: 20px; }
-  .colorlib-staff h3 {
+  .contro-staff h3 {
     font-size: 24px;
     margin-bottom: 5px; }
-  .colorlib-staff p {
+  .contro-staff p {
     margin-bottom: 30px; }
-  .colorlib-staff .role {
+  .contro-staff .role {
     color: gray;
     margin-bottom: 30px;
     font-weight: normal;
     display: block; }
 
-#colorlib-started {
+#contro-started {
   padding: 3em 0 0 0;
   background-size: cover;
   background-position: top center;
@@ -760,7 +763,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   float: left;
   width: 100%; }
-  #colorlib-started .overlay {
+  #contro-started .overlay {
     z-index: 0;
     position: absolute;
     bottom: 0;
@@ -768,13 +771,13 @@ h1, h2, h3, h4, h5, h6, figure {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7); }
-  #colorlib-started .colorlib-heading h2 {
+  #contro-started .contro-heading h2 {
     line-height: 80px;
     color: #fff;
     margin-bottom: 30px !important; }
-  #colorlib-started .colorlib-heading p {
+  #contro-started .contro-heading p {
     color: rgba(255, 255, 255, 0.5); }
-  #colorlib-started .btn {
+  #contro-started .btn {
     height: 54px;
     border: none !important;
     background: #1b2b42;
@@ -784,10 +787,10 @@ h1, h2, h3, h4, h5, h6, figure {
     font-weight: 400;
     padding-left: 50px;
     padding-right: 50px; }
-  #colorlib-started .form-inline .form-group {
+  #contro-started .form-inline .form-group {
     width: 100% !important;
     margin-bottom: 10px; }
-    #colorlib-started .form-inline .form-group .form-control {
+    #contro-started .form-inline .form-group .form-control {
       width: 100%; }
 
 .blog-featured a img {
@@ -820,22 +823,22 @@ h1, h2, h3, h4, h5, h6, figure {
       font-size: 16px;
       margin-bottom: 10px; }
 
-.colorlib-blog {
+.contro-blog {
   margin-bottom: 40px;
   width: 100%;
   float: left; }
-  .colorlib-blog > a {
+  .contro-blog > a {
     display: block;
     position: relative;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
-    .colorlib-blog > a img {
+    .contro-blog > a img {
       width: 100%; }
   @media screen and (max-width: 768px) {
-    .colorlib-blog {
+    .contro-blog {
       width: 100%; } }
-  .colorlib-blog .blog-text {
+  .contro-blog .blog-text {
     margin-bottom: 30px;
     position: relative;
     width: 100%;
@@ -846,57 +849,57 @@ h1, h2, h3, h4, h5, h6, figure {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    .colorlib-blog .blog-text span {
+    .contro-blog .blog-text span {
       display: inline-block;
       margin-bottom: 20px; }
-      .colorlib-blog .blog-text span.comment {
+      .contro-blog .blog-text span.comment {
         float: right; }
-        .colorlib-blog .blog-text span.comment a {
+        .contro-blog .blog-text span.comment a {
           color: rgba(0, 0, 0, 0.3); }
-          .colorlib-blog .blog-text span.comment a i {
+          .contro-blog .blog-text span.comment a i {
             color: #1b2b42;
             padding-left: 7px; }
-    .colorlib-blog .blog-text .meta {
+    .contro-blog .blog-text .meta {
       color: #b3b3b3;
       font-size: 16px;
       margin-bottom: 10px; }
-    .colorlib-blog .blog-text h3 {
+    .contro-blog .blog-text h3 {
       font-size: 28px;
       margin-bottom: 20px;
       line-height: 1.5; }
-      .colorlib-blog .blog-text h3 a {
+      .contro-blog .blog-text h3 a {
         color: black; }
 
-#colorlib-footer {
+#contro-footer {
   background: #0b162a;
   color: rgba(255, 255, 255, 0.5);
   padding: 1em; }
-  #colorlib-footer .colorlib-footer-links {
+  #contro-footer .contro-footer-links {
     padding: 0;
     margin: 0; }
     @media screen and (max-width: 768px) {
-      #colorlib-footer .colorlib-footer-links {
+      #contro-footer .contro-footer-links {
         margin-bottom: 30px; } }
-    #colorlib-footer .colorlib-footer-links li {
+    #contro-footer .contro-footer-links li {
       padding: 0;
       margin: 0;
       list-style: none; }
-      #colorlib-footer .colorlib-footer-links li a {
+      #contro-footer .contro-footer-links li a {
         color: rgba(255, 255, 255, 0.8);
         text-decoration: none; }
-        #colorlib-footer .colorlib-footer-links li a:hover {
+        #contro-footer .contro-footer-links li a:hover {
           text-decoration: underline; }
-  #colorlib-footer h4 {
+  #contro-footer h4 {
     color: #fff;
     font-size: 20px;
     border-bottom: 2px solid #1b2b42;
     padding-bottom: 15px; }
-  #colorlib-footer .colorlib-widget {
+  #contro-footer .contro-widget {
     margin-bottom: 30px; }
     @media screen and (max-width: 768px) {
-      #colorlib-footer .colorlib-widget {
+      #contro-footer .contro-widget {
         text-align: left; } }
-  #colorlib-footer .copyright .block {
+  #contro-footer .copyright .block {
     display: block; }
 
 #map {
@@ -907,7 +910,7 @@ h1, h2, h3, h4, h5, h6, figure {
     #map {
       height: 200px; } }
 
-#colorlib-offcanvas {
+#contro-offcanvas {
   position: absolute;
   z-index: 1901;
   width: 270px;
@@ -928,32 +931,32 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    #colorlib-offcanvas {
+    #contro-offcanvas {
       display: block; } }
-  .offcanvas #colorlib-offcanvas {
+  .offcanvas #contro-offcanvas {
     -moz-transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); }
-  #colorlib-offcanvas a {
+  #contro-offcanvas a {
     color: rgba(255, 255, 255, 0.5); }
-    #colorlib-offcanvas a:hover {
+    #contro-offcanvas a:hover {
       color: rgba(255, 255, 255, 0.8); }
-  #colorlib-offcanvas ul {
+  #contro-offcanvas ul {
     padding: 0;
     margin: 0; }
-    #colorlib-offcanvas ul li {
+    #contro-offcanvas ul li {
       padding: 0;
       margin: 0;
       list-style: none; }
-      #colorlib-offcanvas ul li > ul {
+      #contro-offcanvas ul li > ul {
         padding-left: 20px;
         display: none; }
-      #colorlib-offcanvas ul li.offcanvas-has-dropdown > a {
+      #contro-offcanvas ul li.offcanvas-has-dropdown > a {
         display: block;
         position: relative; }
-        #colorlib-offcanvas ul li.offcanvas-has-dropdown > a:after {
+        #contro-offcanvas ul li.offcanvas-has-dropdown > a:after {
           position: absolute;
           right: 0px;
           font-family: 'icomoon';
@@ -972,7 +975,7 @@ h1, h2, h3, h4, h5, h6, figure {
           -webkit-transition: 0.5s;
           -o-transition: 0.5s;
           transition: 0.5s; }
-      #colorlib-offcanvas ul li.offcanvas-has-dropdown.active a:after {
+      #contro-offcanvas ul li.offcanvas-has-dropdown.active a:after {
         -webkit-transform: rotate(-180deg);
         -moz-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
@@ -1018,18 +1021,18 @@ h1, h2, h3, h4, h5, h6, figure {
       text-decoration: none;
       outline: none; }
 
-.colorlib-nav-toggle {
+.contro-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
   text-decoration: none;
   top: 25px !important; }
-  .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
+  .contro-nav-toggle.active i::before, .contro-nav-toggle.active i::after {
     background: #444; }
-  .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+  .contro-nav-toggle:hover, .contro-nav-toggle:focus, .contro-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
-  .colorlib-nav-toggle i {
+  .contro-nav-toggle i {
     position: relative;
     display: inline-block;
     width: 25px;
@@ -1042,7 +1045,7 @@ h1, h2, h3, h4, h5, h6, figure {
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
+    .contro-nav-toggle i::before, .contro-nav-toggle i::after {
       content: '';
       width: 25px;
       height: 2px;
@@ -1052,28 +1055,28 @@ h1, h2, h3, h4, h5, h6, figure {
       -webkit-transition: all .2s ease-out;
       -o-transition: all .2s ease-out;
       transition: all .2s ease-out; }
-  .colorlib-nav-toggle.colorlib-nav-white > i {
+  .contro-nav-toggle.contro-nav-white > i {
     color: #fff;
     background: #000; }
-    .colorlib-nav-toggle.colorlib-nav-white > i::before, .colorlib-nav-toggle.colorlib-nav-white > i::after {
+    .contro-nav-toggle.contro-nav-white > i::before, .contro-nav-toggle.contro-nav-white > i::after {
       background: #000; }
 
-.colorlib-nav-toggle i::before {
+.contro-nav-toggle i::before {
   top: -7px; }
 
-.colorlib-nav-toggle i::after {
+.contro-nav-toggle i::after {
   bottom: -7px; }
 
-.colorlib-nav-toggle:hover i::before {
+.contro-nav-toggle:hover i::before {
   top: -10px; }
 
-.colorlib-nav-toggle:hover i::after {
+.contro-nav-toggle:hover i::after {
   bottom: -10px; }
 
-.colorlib-nav-toggle.active i {
+.contro-nav-toggle.active i {
   background: transparent; }
 
-.colorlib-nav-toggle.active i::before {
+.contro-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1082,7 +1085,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: rotateZ(45deg);
   background: #fff; }
 
-.colorlib-nav-toggle.active i::after {
+.contro-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1091,7 +1094,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: rotateZ(-45deg);
   background: #fff; }
 
-.colorlib-nav-toggle {
+.contro-nav-toggle {
   position: absolute;
   right: 0px;
   top: 65px;
@@ -1105,7 +1108,7 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 2001;
   border-bottom: none !important; }
   @media screen and (max-width: 768px) {
-    .colorlib-nav-toggle {
+    .contro-nav-toggle {
       display: block; } }
 
 .btn {
@@ -1260,7 +1263,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .row-pb-sm {
   padding-bottom: 2em !important; }
 
-.colorlib-loader {
+.contro-loader {
   position: fixed;
   left: 0px;
   top: 0px;

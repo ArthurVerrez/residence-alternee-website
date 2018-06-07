@@ -3,7 +3,8 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Résidence alternée</title>
+	<title>Résidence alternée | Divorce</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -22,9 +23,9 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Lora|Roboto" rel="stylesheet">
-	
+
 	<link rel="icon" type="image/png" href="images/favicon.png" />
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -56,9 +57,9 @@
 
 	</head>
 	<body>
-		
+
 	<div class="contro-loader"></div>
-	
+
 	<div id="page">
 	<nav class="contro-nav" role="navigation">
 		<div class="top-menu scroll_appear">
@@ -76,9 +77,9 @@
   								</a>
       						</li>
       					<div id="menu_no_button">
-							<li class="active"><a href="index.html">Accueil</a></li>
+							<li ><a href="index.html">Accueil</a></li>
 							<li ><a href="procedure-judiciaire.html">Procédure judiciaire</a></li>
-							<li><a href="nouvelle-legislation.html">Nouvelle législation ?</a></li>
+							<li class="active"><a href="nouvelle-legislation.html">Nouvelle législation ?</a></li>
 							<li><a href="opposition-parents.html">Opposition entre parents</a></li>
 							<!--<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
@@ -100,7 +101,7 @@
 		</div>
 	</nav>
 
-	<div class="side-bar retract scroll_appear3">
+	<div class="side-bar retract scroll_appear2">
 			<div class="side-bar-inside">
 				<ul>
       						<li>
@@ -136,29 +137,53 @@
 
   		</div>
 	</div>
-	
+
+	<div class="scroll_appear3 side-bar-left">
+			<div class="side-bar-left-inside">
+
+  						<ul class="parcours_ul">
+							<a href="procedure-judiciaire.html"><li>
+								Procédure judiciaire
+      						</li></a>
+      					</ul>
+      					<ul id="selected_parcours">
+      						<a href="#"><li>
+								Nouvelle législation ?
+      						</li></a>
+      					</ul>
+      					<ul class="parcours_ul">
+      						<a href="opposition-parents.html"><li>
+								Opposition entre parents
+      						</li></a>
+      						<a href="bien-etre-enfant.html"><li>
+								Bien-être de l'enfant
+      						</li></a>
+
+
+						</ul>
+  		</div>
+	</div>
 
 	<aside id="contro-hero" class="js-fullheight">
 
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/father_daughter.jpg);">
+		   	<li style="background-image: url(images/assemblee_nationale.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1>La résidence alternée</h1>
-									<h2>Insérer ici un sous-titre</h2>
+			   					<h1>Une nouvelle législation ?</h1>
+									<h2>Petite description et texte</h2>
 									<div id="navigate">
-									<p><a class="btn btn-primary btn-lg" id="main-button-parcours" href="divorce.html">Parcours Guidé</a><br>
-									<a class="navigate_freely" href="#">ou naviguer librement</a><br>
+
 									<a href="#" class="navigate_freely_button">
 										<img  id="img_scroll" border="0" alt="W3Schools" src="images/ui/arrow_down.png">
 									</a>
 									</p>
 								</div>
-									
+
 			   				</div>
 			   			</div>
 			   		</div>
@@ -180,11 +205,20 @@
 			</div>
 		</div>
 	</div>
-	
+	<div id="next_button_container">
+	<a href="opposition-parents.html" id="parcours_next">
+  		<div class="button-fill grey">
+    		<div class="button-text">étape suivante</div>
+   			<div class="button-inside">
+      				<div class="inside-text">Opposition parentale</div>
+   			</div>
+  		</div>
+  	</a>
+  </div>
 
 	<footer id="contro-footer" role="contentinfo">
 		<div class="container">
-		
+
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
@@ -200,7 +234,7 @@
 
 	</div>
 
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -224,8 +258,5 @@
 	<script src="js/main.js"></script>
 	<script src="js/secondary.js"></script>
 
-
-
 	</body>
 </html>
-
