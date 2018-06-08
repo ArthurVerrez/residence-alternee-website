@@ -313,7 +313,7 @@ a.active{
 }
 
 
-.corpus blockquote{
+.corpus blockquote.bq1{
 display:block;
 background: #fff;
 margin: 0px 50px 0px 50px;
@@ -330,7 +330,7 @@ border-right: 5px solid #0b162a;
 -webkit-box-shadow: 2px 2px 15px #ccc;
 box-shadow: 2px 2px 15px #ccc;
 }
-.corpus blockquote::before{
+.corpus blockquote.bq1::before{
 content: "“"; 
 font-family: Georgia, serif;
 font-size: 60px;
@@ -340,24 +340,24 @@ position: absolute;
 left: 10px;
 top:5px;
 }
-.corpus blockquote::after{
+.corpus blockquote.bq1::after{
 content: "";
 }
-.corpus blockquote a{
+.corpus blockquote.bq1 a{
 text-decoration: none;
 background: #eee;
 cursor: pointer;
 padding: 0 3px;
 color: #c76c0c;
 }
-.corpus blockquote a:hover{
+.corpus blockquote.bq1 a:hover{
 color: #666;
 }
-.corpus blockquote em{
+.corpus blockquote.bq1 em{
 font-style: italic;
 }
 
-.corpus blockquote .author{
+.corpus blockquote.bq1 .author{
   text-align: right;
   font-style:italic;
   text-transform: none;
