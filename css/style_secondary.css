@@ -320,7 +320,7 @@ margin: 0px 50px 0px 50px;
 padding: 30px 30px 30px 50px;
 position: relative;
 font-family: Georgia, serif;
-font-size: 20px;
+font-size: 17px;
 line-height: 1.2;
 color: #666;
 text-align: justify;
@@ -355,6 +355,12 @@ color: #666;
 }
 .corpus blockquote em{
 font-style: italic;
+}
+
+.corpus blockquote .author{
+  text-align: right;
+  font-style:italic;
+  text-transform: none;
 }
 
 .block_acteurs{
