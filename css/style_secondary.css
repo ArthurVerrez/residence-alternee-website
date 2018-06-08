@@ -308,12 +308,18 @@ a.active{
 
 }
 
-.corpus-title{
+.corpus p.corpus-title{
+  font-size:20px;
+  font-weight: bold;
 
 }
 
+.corpus p.corpus-subtitle{
+  font-size:20px;
+}
 
-.corpus blockquote.bq1{
+
+.corpus blockquote{
 display:block;
 background: #fff;
 margin: 0px 50px 0px 50px;
@@ -324,14 +330,14 @@ font-size: 17px;
 line-height: 1.2;
 color: #666;
 text-align: justify;
-border-left: 15px solid #0b162a;
-border-right: 5px solid #0b162a;
 -moz-box-shadow: 2px 2px 15px #ccc;
 -webkit-box-shadow: 2px 2px 15px #ccc;
 box-shadow: 2px 2px 15px #ccc;
 }
-.corpus blockquote.bq1::before{
-content: "“"; 
+
+
+
+.corpus blockquote::before{
 font-family: Georgia, serif;
 font-size: 60px;
 font-weight: bold;
@@ -340,24 +346,47 @@ position: absolute;
 left: 10px;
 top:5px;
 }
-.corpus blockquote.bq1::after{
+
+.corpus blockquote.bq1::before{
+content: "“"; 
+}
+.corpus blockquote.bq1{
+border-left: 15px solid #0b162a;
+border-right: 5px solid #0b162a;
+}
+
+.corpus blockquote.bq2::before{
+content: "“"; 
+}
+.corpus blockquote.bq2{
+border-left: 15px solid #0b162a;
+border-right: 5px solid #0b162a;
+}
+.corpus blockquote.bq3::before{
+content: "“"; 
+}
+.corpus blockquote.bq3{
+border-left: 15px solid #0b162a;
+border-right: 5px solid #0b162a;
+}
+.corpus blockquote::after{
 content: "";
 }
-.corpus blockquote.bq1 a{
+.corpus blockquote a{
 text-decoration: none;
 background: #eee;
 cursor: pointer;
 padding: 0 3px;
 color: #c76c0c;
 }
-.corpus blockquote.bq1 a:hover{
+.corpus blockquote a:hover{
 color: #666;
 }
-.corpus blockquote.bq1 em{
+.corpus blockquote em{
 font-style: italic;
 }
 
-.corpus blockquote.bq1 .author{
+.corpus blockquote .author{
   text-align: right;
   font-style:italic;
   text-transform: none;
