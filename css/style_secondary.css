@@ -349,10 +349,11 @@ top:5px;
 
 .corpus blockquote.bq1::before{
 content: "“"; 
+color:#991526;
 }
 .corpus blockquote.bq1{
-border-left: 15px solid #0b162a;
-border-right: 5px solid #0b162a;
+border-left: 15px solid #991526;
+border-right: 5px solid #991526;
 }
 
 .corpus blockquote.bq2::before{
