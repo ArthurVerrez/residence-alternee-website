@@ -356,18 +356,18 @@ border-right: 5px solid #0b162a;
 }
 
 .corpus blockquote.bq2::before{
-content: "“"; 
+content: ""; 
 }
 .corpus blockquote.bq2{
-border-left: 15px solid #0b162a;
-border-right: 5px solid #0b162a;
+border-left: 15px solid #4f684f;
+border-right: 5px solid #4f684f;
 }
 .corpus blockquote.bq3::before{
-content: "“"; 
+content: ""; 
 }
 .corpus blockquote.bq3{
-border-left: 15px solid #0b162a;
-border-right: 5px solid #0b162a;
+border-left: 15px solid #959abf;
+border-right: 5px solid #959abf;
 }
 .corpus blockquote::after{
 content: "";
