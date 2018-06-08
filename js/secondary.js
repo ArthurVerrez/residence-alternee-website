@@ -11,7 +11,7 @@ var fixed2 = $(".scroll_appear2").eq(0);
 var fixed3 = $(".scroll_appear3").eq(0);
 $(window).scroll(function() {
     var top = $(window).scrollTop();
-    var opacity = top/($(document).height()/2);
+    var opacity = top/($(window).height()/2);
     if(top<5){
     	fixed.css("visibility","hidden");
     	fixed2.css("visibility","hidden");

@@ -64,17 +64,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   margin: 0 0 20px 0; }
 
-::-webkit-selection {
-  color: #fff;
-  background: #1b2b42; }
-
-::-moz-selection {
-  color: #fff;
-  background: #1b2b42; }
-
-::selection {
-  color: #fff;
-  background: #1b2b42; }
 
 .contro-nav .top-menu {
   z-index:10;
