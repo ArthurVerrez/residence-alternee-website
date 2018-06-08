@@ -23,6 +23,7 @@ var cat_acteurs=[[[0,1,2],"Domaine Juridique","#0F1108"], [[3,4],"Politique","#0
 var tab_acteurs=[["JAF",0],["Médiation",0],["Avocats",0],["Philippe Latombe",1],["Opposition",1],["Pour la RA",2],["Contre la RA",2],["Associations féministes",3],["Associations de défense des pères",3],["Parents",4]];
 
 var connexions=[];
+/*
 document.getElementById('noeud1_acteurs').style.background="white";
 document.getElementById('noeud1_acteurs').style.opacity=1;
 document.getElementById('noeud2_acteurs').style.background="white";
@@ -31,7 +32,7 @@ document.getElementById('noeud3_acteurs').style.background="white";
 document.getElementById('noeud3_acteurs').style.opacity=1;
 document.getElementById('noeud4_acteurs').style.background="white";
 document.getElementById('noeud4_acteurs').style.opacity=1;
-
+*/
 function ecrit_acteur(id){
   var object = document.getElementById(id);
   var test = document.getElementById('noeud1')
@@ -224,7 +225,7 @@ function is_on_actor(i,mx,my,n,rayon){
 var activate4=0;
 var activate2=0;
 var activate3=0;
-
+/*
 document.getElementById('noeud1').onmouseenter=function(e){
   var connexions=[[6,2],[6,3],[6,7]];
   document.getElementById('noeud1_acteurs').style.background="grey";
@@ -349,3 +350,57 @@ document.getElementById('noeud3').onmouseleave=function(e){
   }
 
 };
+
+*/
+
+var total_connexions=[[[6,2],[6,3],[6,7]],[[0,2],[0,1],[0,7],[1,5]],[[3,0],[4,1],[3,7],[4,9]],[]];
+
+var block_acteurs=$(".block_acteurs").eq(0);
+var noeud_acteurs=$(".noeud_acteurs");
+var noeuds=$(".noeuds");
+
+for(i=0;i<noeuds.length;i++){
+  noeuds.eq(i).click(function(e){
+
+    
+    noeud_acteurs.eq($(this).attr("data-noeud")).show(1000);
+
+    if($(".block_acteurs").eq(0).data("data-active")>=0){
+        noeud_acteurs.eq($(".block_acteurs").eq(0).data("data-active")).hide(1000)
+
+    }
+    $(".block_acteurs").eq(0).data("data-active",$(this).attr("data-noeud"))
+
+    connexions=total_connexions[$(this).attr("data-noeud")];
+
+
+    clear_acteurs();
+    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+  
+  });
+
+  noeuds.eq(i).mouseover(function(e){
+
+    connexions=total_connexions[$(this).attr("data-noeud")];
+
+    clear_acteurs();
+    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+  
+  });
+
+  noeuds.eq(i).mouseleave(function(e){
+    if($(".block_acteurs").eq(0).data("data-active")!=$(this).attr("data-noeud")){
+      if( $(".block_acteurs").eq(0).data("data-active")>=0){
+
+        connexions=total_connexions[$(".block_acteurs").eq(0).data("data-active")];
+
+      
+
+      } else{
+        connexions=[]
+      }
+      clear_acteurs();
+      trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+    }
+  });
+}

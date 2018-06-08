@@ -228,18 +228,14 @@
   text-align: center;
 }
 
-#canvas-acteurs{
-  margin-top:0;
-  background:#dddddd;
-  float:left;
-
-}
 
 .total_center{
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  width:100%;
+
 
 }
 
@@ -249,15 +245,25 @@
   display:inline-block;
   background-color: grey;
   padding:10px;
-  margin-top:30px;
+  margin-top:10px;
+  text-align:left;
 
   border-radius: 0px 10px 10px 0px;
   opacity:0.7;
+  overflow: hidden;
 }
+#canvas-acteurs{
+  margin-top:0;
+  background:#dddddd;
+  float:left;
+
+}
+
 
 .total_center a:hover{
   cursor: pointer;
   opacity:1;
+
 }
 
 a.active{
@@ -288,3 +294,31 @@ a.active{
   text-align:justify;
 }
 
+
+.block_acteurs{
+  
+  background-color:rgba(0,0,0,0.3);
+  padding:10px;
+}
+.block_acteurs a{
+  margin:0;
+  background:none;
+}
+
+.block_acteurs h2{
+  text-align:center;
+  font-family: "Roboto Light", sans-serif;
+
+  color: white;
+  font-size:20px;
+}
+
+.block_acteurs ul{
+  list-style: none;
+  list-style-type:none;
+
+}
+
+.noeud_acteurs{
+  display:none;
+}
