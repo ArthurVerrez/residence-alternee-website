@@ -109,11 +109,12 @@
   margin-left: auto;
   margin-right: auto;
   transition: all 0.2s ease-in-out;
+  opacity:0.5;
 
 }
 
 #img_scroll:hover {
-  margin-top:10px; 
+  opacity:1;
 }
 
 .side-bar{
@@ -281,5 +282,9 @@ a.active{
 .scroll_appear, .scroll_appear2, .scroll_appear3{
   visibility: hidden;
   opacity:0;
+}
+
+.corpus{
+  text-align:justify;
 }
 
