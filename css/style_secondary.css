@@ -363,6 +363,11 @@ font-style: italic;
   text-transform: none;
 }
 
+.corpus p a{
+  text-decoration: underline;
+  font-style:italic;
+}
+
 .block_acteurs{
   
   background-color:rgba(0,0,0,0.3);
