@@ -353,7 +353,7 @@ document.getElementById('noeud3').onmouseleave=function(e){
 
 */
 
-var total_connexions=[[[6,2],[6,3],[6,7]],[[0,2],[0,1],[0,7],[1,5]],[[3,0],[4,1],[3,7],[4,9]],[]];
+var total_connexions=[[[6,2],[6,3],[6,7]],   [[0,2],[0,1],[0,7],[1,5]],   [[3,0],[4,1],[3,7],   [4,9]],   []];
 
 var block_acteurs=$(".block_acteurs").eq(0);
 var noeud_acteurs=$(".noeud_acteurs");
@@ -365,8 +365,10 @@ for(i=0;i<noeuds.length;i++){
     
     noeud_acteurs.eq($(this).attr("data-noeud")).show(1000);
 
+
     if($(".block_acteurs").eq(0).data("data-active")>=0){
         noeud_acteurs.eq($(".block_acteurs").eq(0).data("data-active")).hide(1000)
+        noeuds.eq($(".block_acteurs").eq(0).data("data-active")).removeClass('active');
 
     }
     $(".block_acteurs").eq(0).data("data-active",$(this).attr("data-noeud"))
@@ -376,6 +378,7 @@ for(i=0;i<noeuds.length;i++){
 
     clear_acteurs();
     trace_acteurs(cat_acteurs,tab_acteurs,connexions);
+    $(this).addClass('active');
   
   });
 
