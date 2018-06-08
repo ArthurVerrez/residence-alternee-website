@@ -3520,7 +3520,7 @@ h1, h2, h3, h4, h5, h6, figure {
     width: auto;
   }
   .viewport-small-20 .rad-interactive.small .rad-interactive-wrapper {
-    float: left;
+    float: right;
     margin: 0 40px;
   }
   .viewport-medium .rad-interactive.small .rad-interactive-wrapper {
@@ -3540,7 +3540,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
   .rad-interactive.small .rad-interactive-wrapper .d-pullquote p {
     position: relative;
-    text-align: left;
+    text-align: right;
     font-family: "nyt-mag-sans", arial, helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.3;
