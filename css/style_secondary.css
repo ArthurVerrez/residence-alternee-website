@@ -392,10 +392,25 @@ font-style: italic;
   text-transform: none;
 }
 
-.corpus p a{
+.corpus p a,.corpus li a{
   text-decoration: underline;
   font-style:italic;
 }
+
+.bar-on-side{
+  margin-left:50px;
+  border-left:solid 2px black;
+  padding-left:10px;
+}
+
+blockquote li{
+  margin-top:10px;
+}
+
+.corpus blockquote{
+  margin-bottom:20px;
+}
+
 
 .block_acteurs{
   
