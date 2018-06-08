@@ -313,25 +313,49 @@ a.active{
 }
 
 
-.corpus blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+.corpus blockquote{
+display:block;
+background: #fff;
+margin: 0px 50px 0px 50px;
+padding: 30px 30px 30px 50px;
+position: relative;
+font-family: Georgia, serif;
+font-size: 20px;
+line-height: 1.2;
+color: #666;
+text-align: justify;
+border-left: 15px solid #0b162a;
+border-right: 5px solid #0b162a;
+-moz-box-shadow: 2px 2px 15px #ccc;
+-webkit-box-shadow: 2px 2px 15px #ccc;
+box-shadow: 2px 2px 15px #ccc;
 }
-.corpus blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+.corpus blockquote::before{
+content: "“"; 
+font-family: Georgia, serif;
+font-size: 60px;
+font-weight: bold;
+color: black;
+position: absolute;
+left: 10px;
+top:5px;
 }
-.corpus blockquote p {
-  display: inline;
+.corpus blockquote::after{
+content: "";
 }
-
+.corpus blockquote a{
+text-decoration: none;
+background: #eee;
+cursor: pointer;
+padding: 0 3px;
+color: #c76c0c;
+}
+.corpus blockquote a:hover{
+color: #666;
+}
+.corpus blockquote em{
+font-style: italic;
+}
 
 .block_acteurs{
   
