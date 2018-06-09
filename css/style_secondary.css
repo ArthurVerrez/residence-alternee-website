@@ -349,10 +349,11 @@ top:5px;
 
 .corpus blockquote.bq1::before{
 content: "“"; 
+color:#991526;
 }
 .corpus blockquote.bq1{
-border-left: 15px solid #0b162a;
-border-right: 5px solid #0b162a;
+border-left: 15px solid #991526;
+border-right: 5px solid #991526;
 }
 
 .corpus blockquote.bq2::before{
@@ -392,10 +393,25 @@ font-style: italic;
   text-transform: none;
 }
 
-.corpus p a{
+.corpus p a,.corpus li a{
   text-decoration: underline;
   font-style:italic;
 }
+
+.bar-on-side{
+  margin-left:50px;
+  border-left:solid 2px black;
+  padding-left:10px;
+}
+
+blockquote li{
+  margin-top:10px;
+}
+
+.corpus blockquote{
+  margin-bottom:20px;
+}
+
 
 .block_acteurs{
   
