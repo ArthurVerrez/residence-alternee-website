@@ -65,30 +65,26 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0; }
 
 
-.contro-nav .top-menu {
+.contro-nav .top-menu, .contro-nav .top-menu-appeared {
   z-index:10;
   padding: 0;
-  position:fixed;
+  
   background-color:rgba(255,255,255,1);
   width:100%;
   font-family: 'Lato', sans-serif;
-  opacity: 0;
-  visibility: hidden;
+  
   font-size:15px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
   margin-bottom:0;
 
    }
 
-   .contro-nav .top-menu-appeared {
-  z-index:10;
-  padding: 6px 0;
-  background-color:rgba(255,255,255,1);
-  width:100%;
-  font-family: 'Lato', sans-serif;
-  margin-bottom:0;
+  .contro-nav .top-menu {
+    position:fixed;
+  opacity: 0;
+  visibility: hidden;
+  }
 
-   }
 
 
 

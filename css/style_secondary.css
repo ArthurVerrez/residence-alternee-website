@@ -637,3 +637,15 @@ blockquote li{
     transform: rotate(30deg);
   }
 }
+
+
+
+/* Acteurs */
+img.photo_acteur{
+  width:40%;
+  float:left;
+  margin-right:20px;
+}
+
+h2.actor_name{
+}
