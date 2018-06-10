@@ -1,1 +1,3 @@
-ErrorDocument 404 /groupe17/erreur.html
+ErrorDocument 404 /groupe17/errors/erreur.html
+
+Options All -Indexes
