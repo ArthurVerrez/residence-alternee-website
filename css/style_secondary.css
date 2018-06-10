@@ -91,7 +91,7 @@
   font-family: "Roboto Light", sans-serif;
   color:white;
   padding:0;
-  font-size:0.8em;
+  font-size:1em;
 }
 
 .navigate_freely:hover{
@@ -118,20 +118,27 @@
 }
 
 .side-bar{
-  width:200px;
+  width:300px;
   z-index:9;
   position:fixed;
+  top: 50%;
+  transform: translate(0, -50%);
   right:0;
   padding:0;
   margin:0;
-
-  margin-top:100px;
+  height:70%;
 
 }
 
+
 .side-bar-inside{
-  width:100%;
   text-align: center;
+}
+
+.side-bar-inside ul{
+  position:absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .side-bar-left{
@@ -210,6 +217,7 @@
 
 #next_button_container{
   text-align: right;
+  margin-bottom:10px;
 }
 #parcours_next{
   z-index:100;
@@ -254,7 +262,7 @@
 }
 #canvas-acteurs{
   margin-top:0;
-  background:#dddddd;
+  background:#ededed;
   float:left;
 
 }
@@ -272,19 +280,30 @@ a.active{
 }
 
 .retract{
-  background:white;
+  
+  background:#ededed;
   width:40px;
   border-radius: 10px 0px 0px 10px;
-  list-style-image: url('../images/ui/tick_empty.png');
+  /*list-style-image: url('../images/ui/tick_empty.png');*/
+  list-style:none;
   transition: width 0.2s ease-in-out, background 0.2s ease-in-out;
+  border-left:solid #bfbfbf 2px;
 }
 
 .retract:hover{
-  background:transparent;
-  width:200px;
+  width:240px;
   list-style: none;
 }
 
+.vertical_indication{
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  float:left;
+  text-align:center;
+  vertical-align: middle;
+  height:100%;
+  font-family: georgia, "times new roman", times, serif;
+}
 .scroll_appear, .scroll_appear2, .scroll_appear3{
   visibility: hidden;
   opacity:0;
@@ -328,7 +347,7 @@ position: relative;
 font-family: Georgia, serif;
 font-size: 17px;
 line-height: 1.2;
-color: #666;
+color: black;
 text-align: justify;
 -moz-box-shadow: 2px 2px 15px #ccc;
 -webkit-box-shadow: 2px 2px 15px #ccc;
@@ -346,6 +365,7 @@ position: absolute;
 left: 10px;
 top:5px;
 }
+
 
 .corpus blockquote.bq1::before{
 content: "“"; 
@@ -439,4 +459,10 @@ blockquote li{
 
 .noeud_acteurs{
   display:none;
+}
+
+
+.small_actor_circle{
+  width:200px;
+  height:200px;
 }
