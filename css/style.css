@@ -128,7 +128,9 @@ h1, h2, h3, h4, h5, h6, figure {
       -o-transition: 0.5s;
       transition: 0.5s; }
       .contro-nav ul li a:hover, .contro-nav ul li a:focus, .contro-nav ul li a:active {
-        color: black; }
+        color: black;
+        font-size:0.81em ;
+         }
     .contro-nav ul li.has-dropdown {
       position: relative; }
       .contro-nav ul li.has-dropdown .dropdown {

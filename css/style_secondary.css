@@ -142,7 +142,11 @@
 }
 
 .side-bar-left{
-  height:100%;
+  top: 40%;
+  transform: translate(0, -50%);
+  right:0;
+  padding:0;
+  margin:0;
   width:250px;
   z-index:9;
   position:fixed;
@@ -153,8 +157,8 @@
 }
 
 .side-bar-left-inside{
+  height:100%;
   width:50px;
-  margin-top:100px;
   color:black;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
@@ -216,14 +220,16 @@
 }
 
 #next_button_container{
-  text-align: right;
+  text-align: left;
   margin-bottom:10px;
+  z-index:100;
 }
 #parcours_next{
   z-index:100;
   white-space: nowrap;
   font-family: 'Lato', sans-serif;
   font-size:0.8em;
+  z-index:100;
 }
 
 #parcours_next .button-fill{
@@ -262,7 +268,7 @@
 }
 #canvas-acteurs{
   margin-top:0;
-  background:#ededed;
+  background:white;
   float:left;
 
 }
@@ -281,7 +287,7 @@ a.active{
 
 .retract{
   
-  background:#ededed;
+  background:white;
   width:40px;
   border-radius: 10px 0px 0px 10px;
   /*list-style-image: url('../images/ui/tick_empty.png');*/
