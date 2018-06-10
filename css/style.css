@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5, h6, figure {
   visibility: hidden;
   font-size:15px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom:0;
 
    }
 
@@ -85,6 +86,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-color:rgba(255,255,255,1);
   width:100%;
   font-family: 'Lato', sans-serif;
+  margin-bottom:0;
 
    }
 
@@ -128,7 +130,9 @@ h1, h2, h3, h4, h5, h6, figure {
       -o-transition: 0.5s;
       transition: 0.5s; }
       .contro-nav ul li a:hover, .contro-nav ul li a:focus, .contro-nav ul li a:active {
-        color: black; }
+        color: black;
+        font-size:0.81em ;
+         }
     .contro-nav ul li.has-dropdown {
       position: relative; }
       .contro-nav ul li.has-dropdown .dropdown {

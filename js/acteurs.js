@@ -1,6 +1,8 @@
 var canvas = document.getElementById('canvas-acteurs');
-canvas.style.height=window.innerHeight+"px";
-canvas.style.width=window.innerHeight+"px";
+
+/*canvas.style.height=window.innerHeight+"px";
+canvas.style.width=window.innerHeight+"px";*/
+canvas.style.height=canvas.style.width+"px";
 var X = canvas.width / 2;
 var Y = canvas.height / 2;
 var R = X*(3/4);
