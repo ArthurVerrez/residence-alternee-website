@@ -284,6 +284,16 @@
 }
 
 
+
+#canvas-acteurs-small{
+  margin-top: 0;
+  background: white;
+  float: left;
+}
+
+}
+
+
 .total_center a:hover{
   cursor: pointer;
   opacity:1;
@@ -532,6 +542,7 @@ blockquote li{
   font-style: normal; }
 
 .button_noeud {
+
   display: inline-block;
   font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -577,6 +588,7 @@ blockquote li{
 }
 .arrow {
   background: rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 .arrow:hover {
   background: rgba(0,0,0,0.6);

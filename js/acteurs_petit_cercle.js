@@ -1,4 +1,4 @@
-var canvas = document.getElementById('canvas-acteurs');
+var canvas = document.getElementById('canvas-acteurs-small');
 
 /*
 canvas.style.height=window.innerHeight+"px";
