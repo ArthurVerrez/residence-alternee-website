@@ -461,7 +461,7 @@ blockquote li{
 
 
 .block_acteurs{
-
+  z-index:10;
   position:absolute;
   top:50%;
   padding-top:1em;
@@ -473,9 +473,17 @@ blockquote li{
   height:50%;
   transform:translate(0,-50%);
 }
+
 .block_acteurs a{
   margin:0;
   background:none;
+  font-style: italic;
+  margin-top:10px;
+
+}
+
+.block_acteurs a:hover{
+  text-decoration: underline;
 }
 
 .block_acteurs h2{
@@ -642,10 +650,22 @@ blockquote li{
 
 /* Acteurs */
 img.photo_acteur{
-  width:40%;
+  width:50%;
   float:left;
   margin-right:20px;
+  
 }
 
+
 h2.actor_name{
+  text-align:left;
+  font-size:30px;
+  font-family: georgia, "times new roman", times, serif;
+}
+
+p.actor_description{
+  
+  
+  font-family: georgia, "times new roman", times, serif;
+  font-size:16px;
 }

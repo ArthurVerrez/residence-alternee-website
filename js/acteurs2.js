@@ -26,16 +26,7 @@ var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1]
 ["FENAMEF",2],["UNAF",2],["CNAF",2],["CESE",2],["JAF",3],["Associations de pères",4]];
 
 var connexions=[];
-/*
-document.getElementById('noeud1_acteurs').style.background="white";
-document.getElementById('noeud1_acteurs').style.opacity=1;
-document.getElementById('noeud2_acteurs').style.background="white";
-document.getElementById('noeud2_acteurs').style.opacity=1;
-document.getElementById('noeud3_acteurs').style.background="white";
-document.getElementById('noeud3_acteurs').style.opacity=1;
-document.getElementById('noeud4_acteurs').style.background="white";
-document.getElementById('noeud4_acteurs').style.opacity=1;
-*/
+
 function ecrit_acteur(id){
   var object = document.getElementById(id);
   var test = document.getElementById('noeud1')
@@ -58,20 +49,51 @@ function circle_arcs_2points(n,ctx,X,Y,R,i,j,width_connections){
 
   var angle1 = i*(2*Math.PI/n);
   var angle2 = j*(2*Math.PI/n);
+
   var X1 = X + R_pcircle*Math.cos(angle1);
   var Y1 = Y + R_pcircle*Math.sin(angle1);
   var X2 = X + R_pcircle*Math.cos(angle2);
   var Y2 = Y + R_pcircle*Math.sin(angle2);
+
+
   var X3 = X + (R_pcircle/2)*Math.cos(angle1);
   var Y3 = Y + (R_pcircle/2)*Math.sin(angle1);
   var X4 = X + (R_pcircle/2)*Math.cos(angle2);
   var Y4 = Y + (R_pcircle/2)*Math.sin(angle2);
+
+
   ctx.beginPath();
   ctx.moveTo(X1,Y1);
   ctx.bezierCurveTo(X3,Y3,X4,Y4,X2,Y2);
 
   ctx.stroke();
 }
+
+function circle_arcs_center(n,ctx,X,Y,R,i,width_connections){
+
+  ctx.lineWidth = width_connections;
+
+  var angle1 = i*(2*Math.PI/n);
+
+  var X1 = X + R_pcircle*Math.cos(angle1);
+  var Y1 = Y + R_pcircle*Math.sin(angle1);
+  var X2 = X;
+  var Y2 = Y;
+
+
+  var X3 = X + (R_pcircle/2)*Math.cos(angle1);
+  var Y3 = Y + (R_pcircle/2)*Math.sin(angle1);
+  var X4 = X;
+  var Y4 = Y;
+
+
+  ctx.beginPath();
+  ctx.moveTo(X1,Y1);
+  ctx.bezierCurveTo(X3,Y3,X4,Y4,X2,Y2);
+
+  ctx.stroke();
+}
+
 
 
 function add_place_text(alpha){
@@ -153,9 +175,11 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
     }
     }
 
+
     ctx.strokeStyle="black";
     for(i=0; i<connexions.length;i++){
-      circle_arcs_2points(n,ctx,X,Y,R,connexions[i][0],connexions[i][1],width_connections);
+      /*
+      circle_arcs_center(n,ctx,X,Y,R,connexions[i][0],connexions[i][1],width_connections);
       for(j=0; j<2;j++){
 
         var Angle = connexions[i][j]*(2*Math.PI/n);
@@ -167,7 +191,19 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         ctx.fillStyle = cat_acteurs[tab_acteurs[connexions[i][j]][1]][2];
         ctx.fillText(tab_acteurs[connexions[i][j]][0],XA,YA);
         ctx.stroke();
-      }
+        */
+      circle_arcs_center(n,ctx,X,Y,R,connexions[i],width_connections);
+      
+
+        var Angle = connexions[i][j]*(2*Math.PI/n);
+        var XA = X + (6*R_pcircle/5)*Math.cos(Angle);//+ add_place_text(angle))[0];
+        var YA = Y + (6*R_pcircle/5)*Math.sin(Angle);//+ add_place_text(angle))[1];
+
+        ctx.beginPath();
+        ctx.font = "20px Georgia";
+        ctx.fillStyle = cat_acteurs[tab_acteurs[connexions[i]][1]][2];
+        ctx.fillText(tab_acteurs[connexions[i]],XA,YA);
+        ctx.stroke();
     }
 
 
@@ -194,28 +230,8 @@ function clear_acteurs(){
 
 
 
-/*var tab = initialize_canvas();
-circle_arcs(6,tab[0],tab[1],tab[2],tab[3]);
-tab[0].strokeStyle="black";
-
-circle_points(19,tab[0],tab[1],tab[2],tab[3]);
-
-circle_arcs_points(5,tab[0],tab[1],tab[2],tab[3]);*/
-
 trace_acteurs(cat_acteurs,tab_acteurs,connexions);
 
-
-
-/*canvas.onmousemove=function(e){
-
-    n=tab_acteurs.length;
-    var mx=e.clientX - canvas.getBoundingClientRect().left + window.scrollX;;
-    var my=e.clientY - canvas.getBoundingClientRect().top + window.scrollY;
-    //console.log(is_on_actor(0,mx,my,n,R_points+width_points));
-    //console.log(Math.abs(Math.pow(mx-coordX(n,0,X),2)+Math.pow(my-coordY(n,0,Y),2))-Math.pow(R_points+width_points,2))
-    //console.log(is_inside_circle(mx,my,R,X,Y));
-    //console.log("Position de la souris :  X=" + (mx-coordX(n,0)) + "   Y="+(my-coordY(n,0)));
-}*/
 
 function is_inside_circle(mx,my,rayon,x,y){
   return Math.abs(Math.pow(mx-x,2)+Math.pow(my-y,2))<=Math.pow(rayon,2);
@@ -225,140 +241,9 @@ function is_on_actor(i,mx,my,n,rayon){
   return is_inside_circle(mx,my,rayon,coordX(n,i),coordY(n,i));
 }
 
-var activate4=0;
-var activate2=0;
-var activate3=0;
-/*
-document.getElementById('noeud1').onmouseenter=function(e){
-  var connexions=[[6,2],[6,3],[6,7]];
-  document.getElementById('noeud1_acteurs').style.background="grey";
-  clear_acteurs();
-  trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-};
-
-document.getElementById('noeud1').onclick=function(e){
-  if(activate4==0) {
-  activate4=1;
-  activate2=0;
-  activate3=0;
-  document.getElementById('noeud1').style.background="black";
-  document.getElementById('noeud1').style.opacity=1;
-  document.getElementById('noeud1_acteurs').style.background="grey";
-  document.getElementById('noeud2').style.background="grey";
-  document.getElementById('noeud3').style.background="grey";
-  ecrit_acteur('noeud1_acteurs');
-} else {
-  activate4=0;
-  activate2=0;
-  activate3=0;
-  document.getElementById('noeud1').style.background="grey";
-  document.getElementById('noeud1').style.opacity=1;
-  clear_acteur();
-}
-};
-
-document.getElementById('noeud1').onmouseleave=function(e){
-  if(activate4==1){
-    var connexions=[[6,2],[6,3],[6,7]];
-    clear_acteurs();
-    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-
-  }else{
-    var connexions=[];
-    document.getElementById('noeud1_acteurs').style.background="white";
-    clear_acteurs();
-    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-  }
-
-};
-
-document.getElementById('noeud2').onmouseenter=function(e){
-  var connexions=[[0,2],[0,1],[0,7],[1,5]];
-
-  clear_acteurs();
-  trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-};
-
-document.getElementById('noeud2').onclick=function(e){
-  if (activate2 == 0) {
-  activate2=1;
-  activate4=0;
-  activate3=0;
-  document.getElementById('noeud2').style.background="black";
-  document.getElementById('noeud2').style.opacity=1;
-  document.getElementById('noeud1').style.background="grey";
-  document.getElementById('noeud3').style.background="grey";
-  document.getElementById('noeud1_acteurs').style.background="white";
-} else {
-  activate2=0;
-  activate4=0;
-  activate3=0;
-  document.getElementById('noeud2').style.background="grey";
-  document.getElementById('noeud2').style.opacity=1;
-}
-};
-
-document.getElementById('noeud2').onmouseleave=function(e){
-  if(activate2==1){
-    var connexions=[[0,2],[0,1],[0,7],[1,5]];
-    clear_acteurs();
-    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-
-  }else{
-    var connexions=[];
-    clear_acteurs();
-    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-  }
-
-};
-
-document.getElementById('noeud3').onmouseenter=function(e){
-  var connexions=[[3,0],[4,1],[3,7],[4,9]];
-
-  clear_acteurs();
-  trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-};
-
-document.getElementById('noeud3').onclick=function(e){
-  if(activate3==0){
-  activate3 =1;
-  activate2=0;
-  activate4=0;
-  document.getElementById('noeud3').style.background="black";
-  document.getElementById('noeud3').style.opacity=1;
-  document.getElementById('noeud1').style.background="grey";
-  document.getElementById('noeud2').style.background="grey";
-  document.getElementById('noeud1_acteurs').style.background="white";
-} else {
-  activate3 =0;
-  activate2=0;
-  activate4=0;
-  document.getElementById('noeud3').style.background="grey";
-  document.getElementById('noeud3').style.opacity=1;
 
 
-}
-};
-
-document.getElementById('noeud3').onmouseleave=function(e){
-  if(activate3==1){
-    var connexions=[[3,0],[4,1],[3,7],[4,9]];
-    clear_acteurs();
-    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-
-  }else{
-    var connexions=[];
-    clear_acteurs();
-    trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-  }
-
-};
-
-*/
-
-var total_connexions=[[[6,2],[6,3],[6,7]],   [[0,2],[0,1],[0,7],[1,5]],   [[3,0],[4,1],[3,7],   [4,9]],   [[6,1],[6,2],[1,2],[6,3],[1,3],[3,2]]];
-
-
+var total_connexions=[[1,2,3,4],[0,2],[3,4],[4,5,8]];
 
 var block_acteurs=$(".block_acteurs").eq(0);
 var noeud_acteurs=$(".noeud_acteurs");

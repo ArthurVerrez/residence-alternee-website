@@ -81,31 +81,6 @@ function add_place_text(alpha){
 }
 
 
-function circle_arcs_center(n,ctx,X,Y,R,i,width_connections){
-
-  ctx.lineWidth = width_connections;
-
-  var angle1 = i*(2*Math.PI/n);
-
-  var X1 = X + R_pcircle*Math.cos(angle1);
-  var Y1 = Y + R_pcircle*Math.sin(angle1);
-  var X2 = X;
-  var Y2 = Y;
-
-
-  var X3 = X + (R_pcircle/2)*Math.cos(angle1);
-  var Y3 = Y + (R_pcircle/2)*Math.sin(angle1);
-  var X4 = X;
-  var Y4 = Y;
-
-
-  ctx.beginPath();
-  ctx.moveTo(X1,Y1);
-  ctx.bezierCurveTo(X3,Y3,X4,Y4,X2,Y2);
-
-  ctx.stroke();
-}
-
 function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
 
 
@@ -178,19 +153,25 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
 
     ctx.strokeStyle="black";
     for(i=0; i<connexions.length;i++){
-      circle_arcs_center(n,ctx,X,Y,R,connexions[i],width_connections);
-      
+      circle_arcs_2points(n,ctx,X,Y,R,connexions[i][0],connexions[i][1],width_connections);
+      for(j=0; j<2;j++){
 
         var Angle = connexions[i][j]*(2*Math.PI/n);
         var XA = X + (6*R_pcircle/5)*Math.cos(Angle);//+ add_place_text(angle))[0];
         var YA = Y + (6*R_pcircle/5)*Math.sin(Angle);//+ add_place_text(angle))[1];
 
+        /*ctx.beginPath();
+        ctx.font = "20px Georgia";
+        ctx.fillStyle = cat_acteurs[tab_acteurs[connexions[i][j]][1]][2];
+        ctx.fillText(tab_acteurs[connexions[i][j]][0],XA,YA);
+        ctx.stroke();*/
       }
     }
 
 
    // connections_points(ctx,X,Y,R*(3/4),10,10,100,100);
 
+ }
 
 
  function coordX(n,i){
@@ -210,7 +191,7 @@ function clear_acteurs(){
 }
 
 
-var total_connexions=[[1,2,3,4],[0,2],[3,4],[4,5,8]];
+var total_connexions=[[[6,2],[6,3],[6,7]],   [[0,2],[0,1],[0,7],[1,5]],   [[3,0],[4,1],[3,7],   [4,9]],   []];
 
 connexions=total_connexions[noeud_to_highlight];
 clear_acteurs();
