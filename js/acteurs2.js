@@ -17,17 +17,17 @@ var ctx = canvas.getContext('2d');
 
 
 //Il faut absolument que les acteurs d'une même catégorie se suivent
-var cat_acteurs=[ [[0],"Politique","#025889"],[[1,2],"Scientifiques","#813405"],[[3,4,5,6,7],"Médiation","#48395b"],[[8],"Domaine Juridique","#0F1108"],
-[[9],"Associations","#9b9679"] ];
+var cat_acteurs=[ [[0],"Politique","#025889"],[[1,2,3,4],"Scientifiques","#813405"],[[5,6,7,8,9],"Médiation","#48395b"],[[10,11],"Domaine Juridique","#0F1108"],
+[[12,13,14,15],"Associations","#9b9679"] ];
 
 //tab_acteurs[[nom,categorie d'acteur]]
 
-var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1],["APMF",2],
-["FENAMEF",2],["UNAF",2],["CNAF",2],["CESE",2],["JAF",3]];
+var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1],["Collectif scientifique",1],["CIRA",1],["APMF",2],
+["FENAMEF",2],["UNAF",2],["CNAF",2],["CESE",2],["JAF",3],["Valérie Bloch",3],["SOS Papa",4],["Collectif de la Grue Jaune",4],["Osez le Féminisme !",4],["Les Effronté-e-s",4]];
 
 
 
-var total_connexions=[[0,1,2,3,4,5,6,7,8],[0,2],[3,4],[4,5,8]];
+var total_connexions=[[0,1,2,5,6,7,8,9,10],[0,4,12,13,14,15],[0,11,12,13,14,15],[0,1,2,3,4]];
 
 var connexions=[];
 
@@ -35,7 +35,7 @@ function ecrit_acteur(id){
   var object = document.getElementById(id);
   var test = document.getElementById('noeud1')
   object.textContent = "test";
-  
+
   test.insertAdjacentElement("afterend",object);
   //texte.innerHTML.fontcolor("red");
 
@@ -197,7 +197,7 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         ctx.stroke();
         */
       circle_arcs_center(n,ctx,X,Y,R,connexions[i],width_connections);
-      
+
 
         var Angle = connexions[i][j]*(2*Math.PI/n);
         var XA = X + (6*R_pcircle/5)*Math.cos(Angle);//+ add_place_text(angle))[0];
@@ -256,7 +256,7 @@ var noeuds=$(".noeuds");
 for(i=0;i<noeuds.length;i++){
   noeuds.eq(i).click(function(e){
 
-    
+
     noeud_acteurs.eq($(this).attr("data-noeud")).show(1000);
 
 
@@ -273,7 +273,7 @@ for(i=0;i<noeuds.length;i++){
     clear_acteurs();
     trace_acteurs(cat_acteurs,tab_acteurs,connexions);
     $(this).addClass('active');
-  
+
   });
 
   noeuds.eq(i).mouseover(function(e){
@@ -282,7 +282,7 @@ for(i=0;i<noeuds.length;i++){
 
     clear_acteurs();
     trace_acteurs(cat_acteurs,tab_acteurs,connexions);
-  
+
   });
 
   noeuds.eq(i).mouseleave(function(e){
@@ -291,7 +291,7 @@ for(i=0;i<noeuds.length;i++){
 
         connexions=total_connexions[$(".block_acteurs").eq(0).data("data-active")];
 
-      
+
 
       } else{
         connexions=[]
