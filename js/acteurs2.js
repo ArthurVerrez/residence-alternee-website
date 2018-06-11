@@ -23,7 +23,11 @@ var cat_acteurs=[ [[0],"Politique","#025889"],[[1,2],"Scientifiques","#813405"],
 //tab_acteurs[[nom,categorie d'acteur]]
 
 var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1],["APMF",2],
-["FENAMEF",2],["UNAF",2],["CNAF",2],["CESE",2],["JAF",3],["Associations de pères",4]];
+["FENAMEF",2],["UNAF",2],["CNAF",2],["CESE",2],["JAF",3]];
+
+
+
+var total_connexions=[[0,1,2,3,4,5,6,7,8],[0,2],[3,4],[4,5,8]];
 
 var connexions=[];
 
@@ -243,7 +247,7 @@ function is_on_actor(i,mx,my,n,rayon){
 
 
 
-var total_connexions=[[1,2,3,4],[0,2],[3,4],[4,5,8]];
+
 
 var block_acteurs=$(".block_acteurs").eq(0);
 var noeud_acteurs=$(".noeud_acteurs");
