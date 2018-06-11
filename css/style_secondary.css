@@ -80,7 +80,7 @@
   position:absolute;
   top:10px;
   left:10px;
-} 
+}
 
 
 .js-fullheight{
@@ -278,7 +278,7 @@
   position:absolute;
   left:50%;
   transform:translate(-50%,0);
-  
+
   width:40%;
 
 }
@@ -306,7 +306,7 @@ a.active{
 }
 
 .retract{
-  
+
   background:white;
   width:40px;
   border-radius: 10px 0px 0px 10px;
@@ -341,7 +341,7 @@ a.active{
   font-size:17px;
   font-family: georgia, "times new roman", times, serif;
   font-weight: 400;
-  
+
 }
 
 .corpus p{
@@ -394,7 +394,7 @@ top:5px;
 
 
 .corpus blockquote.bq1::before{
-content: "“"; 
+content: "“";
 color:#991526;
 }
 .corpus blockquote.bq1{
@@ -403,14 +403,14 @@ border-right: 5px solid #991526;
 }
 
 .corpus blockquote.bq2::before{
-content: ""; 
+content: "";
 }
 .corpus blockquote.bq2{
 border-left: 15px solid #4f684f;
 border-right: 5px solid #4f684f;
 }
 .corpus blockquote.bq3::before{
-content: ""; 
+content: "";
 }
 .corpus blockquote.bq3{
 border-left: 15px solid #959abf;
@@ -646,14 +646,23 @@ blockquote li{
   }
 }
 
+/* image noeud */
 
+img.photo_noeud{
+  padding:50px;
+  width:70%;
+  margin-right:auto;
+  margin-left:100px;
+
+
+}
 
 /* Acteurs */
 img.photo_acteur{
   width:50%;
-  float:left;
+  float:right;
   margin-right:20px;
-  
+
 }
 
 
@@ -664,8 +673,8 @@ h2.actor_name{
 }
 
 p.actor_description{
-  
-  
+
+
   font-family: georgia, "times new roman", times, serif;
   font-size:16px;
 }
