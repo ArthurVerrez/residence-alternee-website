@@ -5,7 +5,7 @@ div.table-title {
   display: block;
   margin: auto;
   padding:5px;
-  width: 100%;
+  width: 120%;
 }
 
 .table-title h3 {
@@ -17,6 +17,7 @@ div.table-title {
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;
 }
+
 
 
 /*** Table Styles **/
