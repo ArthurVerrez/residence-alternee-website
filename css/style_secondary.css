@@ -220,7 +220,7 @@
 }
 
 #next_button_container{
-  text-align: left;
+  text-align: center;
   margin-bottom:10px;
   z-index:100;
 }
@@ -470,7 +470,7 @@ blockquote li{
   max-width:30%;
   left:0;
   text-align:center;
-  height:80%;
+  height:75%;
   transform:translate(0,-50%);
 }
 
