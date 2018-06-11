@@ -561,7 +561,7 @@ blockquote li{
   border: none;
   color: white;
   transition: .2s;
-  width:30%;
+  width:25%;
   text-align:left;
   display:absolute;
   margin-top:10px;
@@ -661,7 +661,7 @@ img.photo_noeud{
 img.photo_acteur{
   width:50%;
   float:right;
-  margin-right:20px;
+  margin-left:20px;
 
 }
 
