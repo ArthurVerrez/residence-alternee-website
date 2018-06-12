@@ -55,6 +55,9 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+
 	</head>
 	<body>
 
@@ -67,7 +70,7 @@
 					<div class="col-md-14 menu-1">
 						<ul>
 							<li id="bouton_parcours_menu">
-								<a href="index.html">
+								<a href="nouvelle-legislation.html?p=parcours-guide">
   									<div class="button-fill grey">
     									<div class="button-text">Parcours Guidé</div>
    										<div class="button-inside">
@@ -76,6 +79,12 @@
   									</div>
   								</a>
       						</li>
+
+
+    						
+
+    								
+
       					<div id="menu_no_button">
 							<li ><a href="index.html">Accueil</a></li>
 							<li ><a href="procedure-judiciaire.html">Procédure judiciaire</a></li>
@@ -106,13 +115,13 @@
 				<p class="vertical_indication">Plus d'informations</p>
 				<ul>
       						<li>
-								<a href="acteurs.html" class="button-side-bar" id="side_bar_actor">
+								<a href="acteurs.html?noeud=1" class="button-side-bar" id="side_bar_actor">
 									<div class="button-fill grey">
     									<div class="button-text">Acteurs</div>
    										<div class="button-inside">
       										<div class="inside-text">Acteurs</div>
    										</div>
-   										<canvas id="canvas-acteurs-small" class="small_actor_circle" width="1400px" height="1400px" data-noeud="2">
+   										<canvas id="canvas-acteurs-small" class="small_actor_circle" width="1400px" height="1400px" data-noeud="1">
    										</canvas>
   									</div>
   									
@@ -215,7 +224,7 @@
 						L'objectif de la loi, c'était aussi de dire : est-ce qu'on ne peut pas remettre les choses dans le bons sens ? Le couple parental, il existait avant le divorce, il existe toujours après. C'est pas parce que les deux conjoints sont séparés qu'ils ne sont plus parents. Quand il n'y a pas de violence ni avec l'enfant ou les enfants, il n'y a pas de raison de considérer que l'un des deux parents est moins parent que l'autre.
 					</blockquote>
 					<p>
-						Le député remet en question la procédure judiciaire actuelle. En effet, au début de la procédure, dans l’ordonnance de non-conciliation, des mesures provisoires sont prises par le juge concernant la garde de l’enfant. Or, dans 80% des cas, la garde est provisoirement donnée à la mère et, dans 71% des cas, cette décision provisoire est conservée comme décision définitive le plus souvent un an plus tard. Monsieur Latombe est donc convaincu que ces mesures provisoires ont une influence sur la prise de décision définitive du juge. Il veut donc rétablir l’égalité entre les deux parents en particulier à ce moment crucial.
+						Le député remet en question la procédure judiciaire actuelle. En effet, au début de la procédure, dans l’ordonnance de non-conciliation, des mesures provisoires sont prises par le juge concernant la garde de l’enfant. Or, dans 80% des cas, la garde est provisoirement donnée à la mère et, dans 71% des cas, cette décision provisoire est conservée comme décision définitive le plus souvent un an plus tard (Rapport du Ministère de la Justice de 2012). Monsieur Latombe est donc convaincu que ces mesures provisoires ont une influence sur la prise de décision définitive du juge. Il veut donc rétablir l’égalité entre les deux parents en particulier à ce moment crucial.
 					</p>
 					<p class="corpus-title">Évolution</p>
 					<p>
@@ -370,7 +379,7 @@
 		</div>
 	</div>
 	<div id="next_button_container">
-	<a href="opposition-entre-parents.html" id="parcours_next">
+	<a  id="parcours_next">
   		<div class="button-fill grey">
     		<div class="button-text">étape suivante</div>
    			<div class="button-inside">
@@ -396,11 +405,29 @@
 	</footer>
 
 
+
+	</div>
+	<div id="transition">
+		<p class="text-transition">
+			Cette proposition de loi a été révélatrice d’une véritable opposition entre conjoints basée sur l’existence d’inégalités. Le débat est devenu genré : les hommes s’opposent aux femmes et les associations de défense des pères font face aux associations féministes.
+			<div id="next_button_container_bis">
+				<a href="opposition-entre-parents.html" id="parcours_next_bis">
+  				<div class="button-fill grey">
+    			<div class="button-text">étape suivante</div>
+   				<div class="button-inside">
+      				<div class="inside-text">Opposition parentale</div>
+   				</div>
+  			</div>
+  			</a>
+  			</div>
+		</p>
+
 	</div>
 
+	
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+
+	
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->

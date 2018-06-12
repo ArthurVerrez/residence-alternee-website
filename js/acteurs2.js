@@ -29,6 +29,10 @@ var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1]
 
 var total_connexions=[[0,1,2,5,6,7,8,9,10],[0,4,12,13,14,15],[0,11,12,13,14,15],[0,1,2,3,4]];
 
+
+
+
+
 var connexions=[];
 
 function ecrit_acteur(id){
@@ -396,3 +400,13 @@ for(i=0;i<noeuds.length;i++){
     }
   });
 }
+
+
+
+
+
+
+var noeud_to_highlight = $_GET("noeud");
+
+
+noeuds.eq(noeud_to_highlight).trigger("click");
