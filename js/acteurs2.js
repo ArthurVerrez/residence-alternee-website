@@ -48,7 +48,7 @@ function erase_acteur(id){
 
 function place_X(i){
   if (i === 0) {
-    return -150;
+    return -157;
   } else if (i === 1) {
     return -60;
   } else if (i === 2) {
