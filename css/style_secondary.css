@@ -330,7 +330,8 @@ a.active{
 .retract{
 
   background:white;
-  width:40px;
+  /*width:40px;*/
+  width:240px;
   border-radius: 10px 0px 0px 10px;
   /*list-style-image: url('../images/ui/tick_empty.png');*/
   list-style:none;
