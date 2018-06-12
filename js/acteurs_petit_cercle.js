@@ -5,6 +5,11 @@ canvas.style.height=window.innerHeight+"px";
 canvas.style.width=window.innerHeight+"px";*/
 
 
+
+
+
+
+
 var X = canvas.width / 2;
 var Y = canvas.height / 2;
 var R = X*(3/4);
@@ -20,14 +25,19 @@ var ctx = canvas.getContext('2d');
 
 var noeud_to_highlight = canvas.dataset.noeud;
 
+
 //Il faut absolument que les acteurs d'une même catégorie se suivent
-var cat_acteurs=[[[0,1,2],"Domaine Juridique","#0F1108"], [[3,4],"Politique","#025889"],
-[[5,6],"Scientifiques","#813405"],[[7,8],"Associations","#9b9679"], [[9],"Famille","#48395b"]];
+var cat_acteurs=[ [[0],"Politique","#025889"],[[1,2,3,4],"Scientifiques","#813405"],[[5,6,7,8,9],"Médiation","#48395b"],[[10,11],"Domaine Juridique","#0F1108"],
+[[12,13,14,15],"Associations","#9b9679"] ];
 
 //tab_acteurs[[nom,categorie d'acteur]]
 
-var tab_acteurs=[["JAF",0],["Médiation",0],["Avocats",0],["Philippe Latombe",1],["Opposition",1],["Pour la RA",2],["Contre la RA",2],["Associations féministes",3],["Associations de défense des pères",3],["Parents",4]];
+var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1],["Collectif scientifique",1],["CIRA",1],["APMF",2],
+["FENAMEF",2],["UNAF",2],["CNAF",2],["CESE",2],["JAF",3],["Valérie Bloch",3],["SOS Papa",4],["Collectif de la Grue Jaune",4],["Osez le Féminisme !",4],["Les Effronté-e-s",4]];
 
+
+
+var total_connexions=[[0,1,2,5,6,7,8,9,10],[0,4,12,13,14,15],[0,11,12,13,14,15],[0,1,2,3,4]];
 var connexions=[];
 
 function ecrit_acteur(id){
@@ -210,7 +220,6 @@ function clear_acteurs(){
 }
 
 
-var total_connexions=[[1,2,3,4],[0,2],[3,4],[4,5,8]];
 
 connexions=total_connexions[noeud_to_highlight];
 clear_acteurs();
