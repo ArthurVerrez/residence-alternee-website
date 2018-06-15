@@ -734,3 +734,19 @@ p.actor_description{
 
 
 
+
+
+
+
+
+
+.line {
+  background: #ddd;
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 50%;
+  transform:translateX(50%);
+}
+
+
