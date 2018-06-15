@@ -1,4 +1,4 @@
-A FAIRE POUR LE SITE:
+#A FAIRE POUR LE SITE:
 
 - mettre la biblio : 0%
 - image chrono : 0%
@@ -21,6 +21,12 @@ A FAIRE POUR LE SITE:
 
 - plan détaillé sur la gauche : 0%
 
-- noeud plus espacé : 0%
+#- noeud plus espacé : 100%
 
 - disclaimer pour les homosexuels : 0%
+
+- change parcours guidé : 0%
+
+- espace entre parcours guidé / naviguer librement (et changer le bouton) : 0%
+
+- tableau et citation lisa : 0%
