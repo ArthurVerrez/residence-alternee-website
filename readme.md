@@ -33,6 +33,7 @@
 
 - texte intro à corriger : 0%
 
+<<<<<<< HEAD
 
 
 index click sur parcours -> défiler
@@ -78,3 +79,6 @@ Toujours donner le nom des personnes qui parlent dans citations
 transformer parcours guidé en switch "sur-place"
 
 régler le problème de multiples click sur acteurs
+=======
+- changer photo
+>>>>>>> e5d141545947d7c035b34f1fd016a37ce998e286
