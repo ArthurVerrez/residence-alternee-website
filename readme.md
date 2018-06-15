@@ -9,7 +9,7 @@ A FAIRE POUR LE SITE:
 
 - esthetisme de la page acteur centrale : 0%
 
-- revoir le titre de l'accueil (problematisation courte) : 0%
+- revoir le titre de l'accueil (problematisation courte) : 100%
 
 - preszentation de la team mdr, cadre du cours, etc : 0%
 
@@ -21,4 +21,6 @@ A FAIRE POUR LE SITE:
 
 - plan détaillé sur la gauche : 0%
 
-- noeud plus espacé : 0% 
+- noeud plus espacé : 0%
+
+- disclaimer pour les homosexuels : 0%
