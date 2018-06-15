@@ -743,3 +743,26 @@ p.actor_description{
   color:white;
 
 }
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+.line {
+  background: #ddd;
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 50%;
+  transform:translateX(50%);
+}
+
+
+=======
+>>>>>>> 8aab831e525191efca6a1eff9955dee2b8ad423c

@@ -333,6 +333,10 @@ h1, h2, h3, h4, h5, h6, figure {
           margin: 0;
           padding: 0;
           color: white; }
+        #contro-hero .flexslider .slider-text > .slider-text-inner h2{
+          margin-top:2em;
+        }
+
         #contro-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 44px;
@@ -345,9 +349,11 @@ h1, h2, h3, h4, h5, h6, figure {
             #contro-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 30px; } }
         #contro-hero .flexslider .slider-text > .slider-text-inner h2 {
-          font-size: 20px;
+          font-size: 1.5em;
           line-height: 1.5;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          font-family: 'Lora', serif;
+          padding:20px; }
         #contro-hero .flexslider .slider-text > .slider-text-inner .heading-section {
           font-size: 50px; }
         #contro-hero .flexslider .slider-text > .slider-text-inner .btn {
