@@ -88,10 +88,11 @@
 }
 
 .navigate_freely, .navigate_freely:visited{
-  font-family: "Roboto Light", sans-serif;
+  font-family: "Georgia", sans-serif;
   color:white;
   padding:0;
-  font-size:1em;
+
+  font-size:15px;
 }
 
 .navigate_freely:hover{
@@ -222,7 +223,7 @@
 #next_button_container, #next_button_container_bis{
   text-align: center;
   margin-bottom:10px;
-  
+
 }
 
 #next_button_container{
@@ -730,6 +731,7 @@ p.actor_description{
   color:white;
 
 }
+<<<<<<< HEAD
 
 
 
@@ -750,3 +752,5 @@ p.actor_description{
 }
 
 
+=======
+>>>>>>> 8aab831e525191efca6a1eff9955dee2b8ad423c
