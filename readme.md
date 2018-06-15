@@ -9,7 +9,7 @@
 
 - esthetisme de la page acteur centrale : 0%
 
-- revoir le titre de l'accueil (problematisation courte) : 100%
+##- revoir le titre de l'accueil (problematisation courte) : 100%
 
 - preszentation de la team mdr, cadre du cours, etc : 0%
 
@@ -21,7 +21,7 @@
 
 - plan détaillé sur la gauche : 0%
 
-#- noeud plus espacé : 100%
+##- noeud plus espacé : 100%
 
 - disclaimer pour les homosexuels : 0%
 
