@@ -27,6 +27,8 @@
 
 - change parcours guidé : 0%
 
-- espace entre parcours guidé / naviguer librement (et changer le bouton) : 0%
+##- espace entre parcours guidé / naviguer librement (et changer le bouton) : 100%
 
 - tableau et citation lisa : 0%
+
+- texte intro à corriger : 0%
