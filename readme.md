@@ -1,24 +1,24 @@
 A FAIRE POUR LE SITE:
 
-- mettre la biblio
-- image chrono
-- check jurid. image acteur
-- au commencement du parcours guidé, partir directement sur le petit texte introductif à la procédure judiciaire sinon on est un peu perdu je pense
+- mettre la biblio : 0%
+- image chrono : 0%
+- check jurid. image acteur : 0%
+- au commencement du parcours guidé, partir directement sur le petit texte introductif à la procédure judiciaire sinon on est un peu perdu je pense : 0%
 
-- rendre le cercle clivable pour voir les acteurs et les noeuds dans lesquels ils sont impliqués (dites mais je pense que c'est trop chaud)
+- rendre le cercle clivable pour voir les acteurs et les noeuds dans lesquels ils sont impliqués (dites mais je pense que c'est trop chaud) : 0%
 
-- esthetisme de la page acteur centrale
+- esthetisme de la page acteur centrale : 0%
 
-- revoir le titre de l'accueil (problematisation courte)
+- revoir le titre de l'accueil (problematisation courte) : 0%
 
-- preszentation de la team mdr, cadre du cours, etc
+- preszentation de la team mdr, cadre du cours, etc : 0%
 
-- rajouter acteur chrono au début
+- rajouter acteur chrono au début : 0%
 
-- pour chaque noeud : rajouter intro/conclu (quasiment : à retenir), transition
+- pour chaque noeud : rajouter intro/conclu (quasiment : à retenir), transition : 0%
 
-- date de la chrono
+- date de la chrono : 0%
 
-- plan détaillé sur la gauche
+- plan détaillé sur la gauche : 0%
 
-- noeud plus espacé
+- noeud plus espacé : 0% 
