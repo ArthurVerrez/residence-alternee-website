@@ -32,3 +32,5 @@
 - tableau et citation lisa : 0%
 
 - texte intro à corriger : 0%
+
+- changer photo
