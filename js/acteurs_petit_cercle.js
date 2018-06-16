@@ -18,7 +18,7 @@ var R_points=4;
 var R_pcircle=(3/4)*R
 var width_arcs=canvas.width/25;
 var width_points=canvas.width/25;
-var width_connections=12;
+var width_connections=8;
 
 var ctx = canvas.getContext('2d');
 
@@ -37,7 +37,7 @@ var tab_acteurs=[["Philippe Latombe",0],["Bernard Golse",1],["Maurice Berger",1]
 
 
 
-var total_connexions=[[0,1,2,5,6,7,8,9,10],[0,4,12,13,14,15],[0,11,12,13,14,15],[0,1,2,3,4]];
+var total_connexions=[[0,1,2,5,6,7,8,9,10],[0,4,12,13,14,15],[0,11,12,13,14,15],[0,1,2,3,4],[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]];
 var connexions=[];
 
 
@@ -218,12 +218,16 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         ctx.strokeStyle = cat_acteurs[i][2];
         ctx.lineWidth = width_arcs;
         ctx.stroke();
+
         ctx.beginPath();
 
         ctx.arc(coordX(n,j), coordY(n,j), R_points, 0, 2*Math.PI, false);
         ctx.fillStyle = cat_acteurs[i][2];
+
         ctx.fill();
+        
         ctx.lineWidth = width_points;
+
         ctx.stroke();
 
 
@@ -236,12 +240,13 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         var X1 = X + (4*R/3)*Math.cos(angle) + place_X(i);
         var Y1 = Y + (4*R/3)*Math.sin(angle) + place_Y(i);
 
-
+        /*
         ctx.beginPath();
         ctx.font = "40px Georgia";
         ctx.fillStyle = cat_acteurs[i][2];
         ctx.fillText(cat_acteurs[i][1],X1,Y1);
         ctx.stroke();
+        */
 
 
       } else {
@@ -253,12 +258,13 @@ function trace_acteurs(cat_acteurs,tab_acteurs,connexions){
         var X1 = X + (4*R/3)*Math.cos(bissectrice1)+ place_X(i);
         var Y1 = Y + (4*R/3)*Math.sin(bissectrice1)+ place_Y(i);
 
-
+        /*
         ctx.beginPath();
         ctx.font = "40px Georgia";
         ctx.fillStyle = cat_acteurs[i][2];
         ctx.fillText(cat_acteurs[i][1],X1,Y1);
         ctx.stroke();
+        */
 
     }
     }

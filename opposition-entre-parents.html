@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Résidence alternée | Opposition entre parents</title>
@@ -10,7 +10,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
+	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -54,34 +54,50 @@
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
-	<![endif]-->
+<![endif]-->
 
-	</head>
-	<body>
+</head>
+<body>
 
 	<div class="contro-loader"></div>
 
 	<div id="page">
-	<nav class="contro-nav" role="navigation">
-		<div class="top-menu scroll_appear">
-			<div class="container">
+		<nav class="contro-nav" role="navigation">
+			<div class="top-menu scroll_appear">
+				<div class="container">
 					<div class="col-md-14 menu-1">
+
+						<div class="toggler">
+							<input id="toggler-1" name="toggler-1" type="checkbox" value="1"/>
+							<label for="toggler-1">
+								<svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+									<polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+								</svg>
+								<svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="65 0 130.2 130.2">
+									<line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+									<line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+								</svg>
+							</label>
+						</div>
+
+
+						
 						<ul>
 							<li id="bouton_parcours_menu">
-								<a href="opposition-entre-parents.html?p=parcours-guide">
-  									<div class="button-fill grey">
-    									<div class="button-text">Parcours Guidé</div>
-   										<div class="button-inside">
-      										<div class="inside-text">Commencer</div>
-   										</div>
-  									</div>
-  								</a>
-      						</li>
-      					<div id="menu_no_button">
-							<li ><a href="index.html">Accueil</a></li>
-							<li ><a href="procedure-judiciaire.html">Procédure judiciaire</a></li>
-							<li ><a href="nouvelle-legislation.html">Nouvelle législation ?</a></li>
-							<li class="active"><a href="opposition-entre-parents.html">Opposition entre parents</a></li>
+								<a href="procedure-judiciaire.html?p=parcours-guide">
+									<div class="button-fill grey">
+										<div class="button-text">Parcours Guidé</div>
+										<div class="button-inside">
+											<div class="inside-text">Commencer</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<div id="menu_no_button">
+								<li ><a href="index.html">Accueil</a></li>
+								<li ><a href="procedure-judiciaire.html">Procédure judiciaire</a></li>
+								<li ><a href="nouvelle-legislation.html">Nouvelle législation ?</a></li>
+								<li class="active"><a href="opposition-entre-parents.html">Opposition entre parents</a></li>
 							<!--<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -92,109 +108,110 @@
 								</ul>
 							</li>-->
 							<li><a href="bien-etre-de-lenfant.html">Bien-être de l'enfant</a></li>
+							<li><a id="about-us" href="qui-sommes-nous.html"><div class="circle_around"><p>i</p></div></a></li>
 						</div>
 
-							<!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
-						</ul>
-					</div>
+						<!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
+					</ul>
+				</div>
 
 			</div>
 		</div>
 	</nav>
 
 	<div class="side-bar retract scroll_appear2">
-			<div class="side-bar-inside">
-				<p class="vertical_indication">Plus d'informations</p>
-				<ul>
-      						<li>
-								<a href="acteurs.html?noeud=2" class="button-side-bar" id="side_bar_actor">
-									<div class="button-fill grey">
-    									<div class="button-text">Acteurs</div>
-   										<div class="button-inside">
-      										<div class="inside-text">Acteurs</div>
-   										</div>
-   										<canvas id="canvas-acteurs-small" class="small_actor_circle" width="1400px" height="1400px" data-noeud="2">
-   											</canvas>
-  									</div>
+		<div class="side-bar-inside">
+			<p class="vertical_indication">Plus d'informations</p>
+			<ul>
+				<li>
+					<a href="acteurs.html?noeud=2" class="button-side-bar" id="side_bar_actor">
+						<div class="button-fill grey">
+							<div class="button-text">Acteurs</div>
+							<div class="button-inside">
+								<div class="inside-text">Acteurs</div>
+							</div>
+							<canvas id="canvas-acteurs-small" class="small_actor_circle" width="1400px" height="1400px" data-noeud="2">
+							</canvas>
+						</div>
 
 
 
 
-  								</a>
-      						</li>
-      						<li>
-								<a href="chronologie.html" class="button-side-bar" id="side_bar_actor">
-									<div class="button-fill grey">
-    									<div class="button-text">Chronologie</div>
-   										<div class="button-inside">
-      										<div class="inside-text">Chronologie</div>
-   										</div>
-  										</div>
-  								</a>
+					</a>
+				</li>
+				<li>
+					<a href="chronologie.html" class="button-side-bar" id="side_bar_actor">
+						<div class="button-fill grey">
+							<div class="button-text">Chronologie</div>
+							<div class="button-inside">
+								<div class="inside-text">Chronologie</div>
+							</div>
+						</div>
+					</a>
 
-      						</li>
-				</ul>
-  		</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="scroll_appear3 side-bar-left">
-			<div class="side-bar-left-inside">
+		<div class="side-bar-left-inside">
 
 
 
-      					<ul class="parcours_ul">
-      						<a href="procedure-judiciaire.html"><li>
-								Procédure judiciaire
-      						</li></a>
+			<ul class="parcours_ul">
+				<a href="procedure-judiciaire.html"><li>
+					Procédure judiciaire
+				</li></a>
 
-      						<a href="nouvelle-legislation.html">
-      						<li>
-								Nouvelle législation ?
-      						</li></a>
-						</ul>
+				<a href="nouvelle-legislation.html">
+					<li>
+						Nouvelle législation ?
+					</li></a>
+				</ul>
 
-							<ul id="selected_parcours">
-	      						<a href="#"><li>
-									Opposition parentale
-	      						</li></a>
-	      					</ul>
-								<ul class="parcours_ul">
-									<a href="bien-etre-de-lenfant.html"><li>
-										Bien être de l'enfant
-		      						</li></a>
-		      					</ul>
+				<ul id="selected_parcours">
+					<a href="#"><li>
+						Opposition parentale
+					</li></a>
+				</ul>
+				<ul class="parcours_ul">
+					<a href="bien-etre-de-lenfant.html"><li>
+						Bien être de l'enfant
+					</li></a>
+				</ul>
 
 
 
-  		</div>
-	</div>
+			</div>
+		</div>
 
-	<aside id="contro-hero" class="js-fullheight">
+		<aside id="contro-hero" class="js-fullheight">
 
-		<div class="flexslider js-fullheight">
-			<ul class="slides">
-		   	<li style="background-image: url(images/bad_couple.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container">
-		   			<div class="row">
-			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<h1>Opposition parentale</h1>
-									<div id="navigate">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+					<li style="background-image: url(images/bad_couple.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+									<div class="slider-text-inner">
+										<h1>Opposition parentale</h1>
+										<div id="navigate">
 
-									<a href="#" class="navigate_freely_button">
-										<img  id="img_scroll" border="0" alt="W3Schools" src="images/ui/arrow_down.png">
-									</a>
-									</p>
+											<a href="#" class="navigate_freely_button">
+												<img  id="img_scroll" border="0" alt="W3Schools" src="images/ui/arrow_down.png">
+											</a>
+										</p>
+									</div>
+
 								</div>
-
-			   				</div>
-			   			</div>
-			   		</div>
-		   		</div>
-		   	</li>
-		  	</ul>
-	  	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 
 	</aside>
 
@@ -217,14 +234,14 @@
 
 					<p> Les chiffres sur les inégalités hommes-femmes dans le monde sont extrêmement parlants. En France, on constate 24% d’écart de salaire entre les deux, une discrimination importante à l’emploi mais aussi sur des travaux à temps partiels. Dans le monde politique, c’est encore plus frappant : on compte 38,8% de femmes à l’assemblée nationale, et pendant bien longtemps nous étions sous la barre des 30%. </p>
 
-					<p> Cependant, il y a un domaine où ces inégalités sont inversées : c’est celui des procédures de divorce, et notamment le choix de la résidence des enfants. En effet, la résidence chez la mère est prononcée par les juges aux affaires familiales dans 71% des cas (d’après un <a href="http://www.justice.gouv.fr/publications-10047/rapports-thematiques-10049/la-residence-des-enfants-de-parents-separes-26368.html">rapport du Ministère de la justice de 2012</a>). En particulier lorsque les deux parents ne sont pas d’accord sur le choix à faire, les enfants vont dans 63% des cas chez leur mère. </p>
+					<p> Cependant, il y a un domaine où ces inégalités sont inversées : c’est celui des procédures de divorce, et notamment le choix de la résidence des enfants. En effet, la résidence chez la mère est prononcée par les juges aux affaires familiales dans 71% des cas (d’après un <a target="_blank" href="http://www.justice.gouv.fr/publications-10047/rapports-thematiques-10049/la-residence-des-enfants-de-parents-separes-26368.html">rapport du Ministère de la justice de 2012</a>). En particulier lorsque les deux parents ne sont pas d’accord sur le choix à faire, les enfants vont dans 63% des cas chez leur mère. </p>
 
 					<p> Ainsi, les inégalités précédentes sont en quelques sortes inversées lorsque l’on rentre dans le domaine des procédures de divorce. C’est un point très important, car il suscite beaucoup de réactions, notamment de la part des associations de pères divorcés. Cependant, un autre problème se pose lors de la procédure de divorce : c’est le poids qui est attribué à la parole de chacun des deux parents. </p>
 
-					<p> En effet, d’après une interview réalisée avec le député <a href="actors/philippe-latombe.html">Philippe Latombe</a>, mais aussi d’après le <a href ="http://www.justice.gouv.fr/publications-10047/rapports-thematiques-10049/la-residence-des-enfants-de-parents-separes-26368.html">rapport du Ministère de la Justice</a>, là où un père devra fournir énormément de documents pour justifier de sa capacité à s’occuper de ses enfants, une mère n’aura qu’à expliciter ce qu’elle veut (notamment le fait qu’elle ne veuille pas de résidence alternée) pour qu’un juge aux affaires familiales rejette la demande. </p>
+					<p> En effet, d’après une interview réalisée avec le député <a href="actors/philippe-latombe.html">Philippe Latombe</a>, mais aussi d’après le <a target="_blank" href ="http://www.justice.gouv.fr/publications-10047/rapports-thematiques-10049/la-residence-des-enfants-de-parents-separes-26368.html">rapport du Ministère de la Justice</a>, là où un père devra fournir énormément de documents pour justifier de sa capacité à s’occuper de ses enfants, une mère n’aura qu’à expliciter ce qu’elle veut (notamment le fait qu’elle ne veuille pas de résidence alternée) pour qu’un juge aux affaires familiales rejette la demande. </p>
 					<br>
 					<blockquote class="bq1">
-					 Normalement la justice, elle regarde le dossier dans sa situation et elle demande à chacun d'apporter des éléments, des preuves, des deux côtés. Là, il suffit qu’un des deux dise « je ne veux pas de RA » parce qu’un des parents a un boulot trop prenant : pas besoin de prouver qu’il est prenant, en revanche, en face, il y a besoin d’attendre qu’il dépose ou pas un dossier, qu’il argumente ou pas.<br>
+						Normalement la justice, elle regarde le dossier dans sa situation et elle demande à chacun d'apporter des éléments, des preuves, des deux côtés. Là, il suffit qu’un des deux dise « je ne veux pas de RA » parce qu’un des parents a un boulot trop prenant : pas besoin de prouver qu’il est prenant, en revanche, en face, il y a besoin d’attendre qu’il dépose ou pas un dossier, qu’il argumente ou pas.<br>
 						<span class="author">Philippe Latombe</span>
 					</blockquote>
 					<br>
@@ -237,7 +254,7 @@
 					</p>
 					<br>
 					<blockquote class="bq1">
-					  Le père qui ne voit son enfant que tous les 15 jours, ce n’est plus le cas. Tous les pères qui le demandent on un droit de visite élargi. Cela correspond à un week-end toutes les deux semaines et une ou deux fois par semaine. Aucun juge ne refuse le droit de visite et d’hébergement élargis.<br>
+						Le père qui ne voit son enfant que tous les 15 jours, ce n’est plus le cas. Tous les pères qui le demandent on un droit de visite élargi. Cela correspond à un week-end toutes les deux semaines et une ou deux fois par semaine. Aucun juge ne refuse le droit de visite et d’hébergement élargis.<br>
 						<span class="author">Valérie Bloch </span>
 					</blockquote>
 					<br>
@@ -282,137 +299,137 @@
 						</tbody>
 					</table>
 					<p class="note-sous-tableau">
-						<b>Source:</b> <a href="https://www.impots.gouv.fr/portail/particulier/pensions-alimentaires"> impot.gouv </a><br>
+						<b>Source:</b> <a target="_blank" href="https://www.impots.gouv.fr/portail/particulier/pensions-alimentaires"> impot.gouv </a><br>
 					</p>
 					<br>
 					<br>
 
-						<p>On voit déjà un des premiers problèmes dans le cas d’une résidence alternée qui est celui de la non-déduction pour les impôts. </p>
-						<br>
-						<blockquote class="bq2">
-							 Si vous avez des enfants mineurs dont la charge est partagée avec l'autre parent, dans le cadre de la résidence alternée, […], vous ne pouvez déduire aucune pension alimentaire pour l’entretien de vos enfants.<br>
+					<p>On voit déjà un des premiers problèmes dans le cas d’une résidence alternée qui est celui de la non-déduction pour les impôts. </p>
+					<br>
+					<blockquote class="bq2">
+						Si vous avez des enfants mineurs dont la charge est partagée avec l'autre parent, dans le cadre de la résidence alternée, […], vous ne pouvez déduire aucune pension alimentaire pour l’entretien de vos enfants.<br>
 
-							<span class="author"> <a href="https://www.impots.gouv.fr/portail/particulier/pensions-alimentaires">Source</a></span>
-						</blockquote>
-						<br>
-
-
-						<p> Un autre problème vient du montant des pensions en elles-mêmes. Les pensions se calculent ainsi: <b> Pension = Nombre d’enfant x (Revenu - 545E) x C </b> </p>
-
-						<p> avec C qui est un coefficient lié à la situation des enfants. Par exemple, il vaut 9% pour un enfant en résidence alternée, et 18% pour un enfant vivant seulement chez l’un de ses deux parents. Ainsi, on trouve encore ici une inégalité importante entre la résidence alternée et la résidence chez l’un des deux parents. </p>
-
-						<p> Finalement, de par cette inégalité sur les pensions, et les inégalités entre hommes et femmes lors de la procédure de divorce, on pose la question d’une possible « valeur de l’enfant ». En effet, une des critiques de la résidence alternée est qu’elle ferait perdre de l’argent aux femmes (à cause du calcul des pensions vu plus haut). Or, la pension alimentaire vise à contribuer à l’éducation de l’enfant, à son mode de vie. Ainsi, cette différence de pension alimentaire fixe une valeur monétaire à l’enfant.
-						</p>
-
-						<p> Finalement, la résidence alternée est un choix difficile financièrement (notamment car il faut prendre en compte également la nécessité d’avoir deux logements de taille équivalente et beaucoup d’affaires en double), mais qui demande aussi un certain nombre d’autres conditions : que les logements des deux parents ne soient pas trop distants, etc… </p>
-
-						
-						<img src="images/graphe-paul1.jpg" class="photo_noeud" />
-						<br>
-
-						<p> On peut ainsi voir sur le graphique suivant (Ministère de la justice - 2012) que le taux de résidence alternée augmente de façon nette avec les revenus des parents. On trouve alors un nouveau sujet de controverse : les inégalités entre logements qui se reflètent sur la résidence des enfants. Pourquoi chaque couple n’a-t-il pas les mêmes possibilités de bénéficier de la résidence alternée?  </p>
-
-						<p class = "corpus-subtitle"> Les implications pour le couple :  </p>
-
-						<p> La résidence des enfants chez l’un des deux parents provoque irrémédiablement une inégalité du temps de présence chez l’autre parent, par rapport à une résidence alternée. Mais cette inégalité peut aussi se voir dans l’autre sens : l’un des deux parents va nécessairement se retrouver plus souvent seul (majoritairement le père). De ce constat, on comprend bien pourquoi il va être plus facile pour un père divorcé de « refaire sa vie » : il aura plus de temps. </p>
-
-						<p> À l’inverse, on peut lire que les femmes ont plus de mal pour « refaire leur vie » justement. Mais, et ce fut pointé du doigt par <a href="actors/valerie-bloch.html">Maitre Bloch</a> ainsi que par Maître Muller (Avocat, lui même en procédure de divorce), c’est justement parce que les pères ont souvent beaucoup plus de temps seuls qu’ils peuvent plus facilement recommencer une nouvelle vie. En effet, la résidence alternée va permettre aux deux parents d’être seuls une semaine sur deux, facilitant les changement dans leurs vies.
-						</p>
-
-						<p> C’est là encore une inégalité vis-à-vis des résidences usuelles et un sujet de controverse : quid de l’après-divorce pour la vie amoureuse des chacun des deux parents? En effet, lors du divorce, on va avouer l’échec d’une relation dont les enfants sont le totem. De ce fait, le choix de la résidence va directement lancer une inégalité entre les parents sur comment vivre avec ce divorce.  </p>
-
-						<b class = "corpus-title"> Les oppositions entre associations </b>
-
-						<p> L’opposition entre les parents n’est qu’une représentation de l’opposition homme-femmes, et de par cette opposition, il est intéressant de considérer la controverse de la résidence alternée au travers des associations féministes ainsi que des associations de pères divorcés.  </p>
-
-						<p> Depuis les débats en hémicycle autour de la Loi Latombe (<a href="http://videos.assemblee-nationale.fr/video.5276810_5a20687e71581.3eme-seance--residence-de-l-enfant-en-cas-de-separation-des-parents-suite-30-novembre-2017">Voir la vidéo à l'assemblée nationale</a>), de nombreuses associations se sont de nouveau exprimées sur la résidence alternée, ce n’est cependant pas un débat récent. Depuis 2002 et la nouvelle Loi Famille, la résidence alternée est sujet de controverse important parmis différentes associations. Parmi les arguments cités contre la résidence alternée, on trouve :  </p>
-						<br>
-						<blockquote class = "bq3">
-							<ul>
-								<li>Un rejet de l’intérêt supérieur de l’enfant, car la résidence alternée n’est pas toujours la bonne solution.  </li>
-								<li>Une perte financière pour les femmes via la transformation des pensions alimentaires. </li>
-								<li>Un rejet des mécanismes (multiples) des violences faites aux femmes. </li>
-								<li>Une demande masculiniste qui vise à rendre le père plus puissant.  </li>
+						<span class="author"> <a target="_blank" href="https://www.impots.gouv.fr/portail/particulier/pensions-alimentaires">Source</a></span>
+					</blockquote>
+					<br>
 
 
-							</ul>
-						 </blockquote>
-						 <br>
-						 <p> Nous reviendrons sur ce dernier point dans une troisième partie.  </p>
+					<p> Un autre problème vient du montant des pensions en elles-mêmes. Les pensions se calculent ainsi: <b> Pension = Nombre d’enfant x (Revenu - 545E) x C </b> </p>
 
-						 <p> En l’état actuel des choses, les critiques de la résidence alternée sont faites d’un point de vue financier, mais aussi sur le fait qu’elle permette à la relation de continuer, même après le divorce. Un père peut alors continuer à voir son ex-femme de façon très régulière. Cependant, d’après <a href="actors/valerie-bloch.html">Maitre Bloch</a>, rien ne change par rapport à une résidence chez l’un des deux parents.</p>
+					<p> avec C qui est un coefficient lié à la situation des enfants. Par exemple, il vaut 9% pour un enfant en résidence alternée, et 18% pour un enfant vivant seulement chez l’un de ses deux parents. Ainsi, on trouve encore ici une inégalité importante entre la résidence alternée et la résidence chez l’un des deux parents. </p>
 
-						 <br>
-						 <blockquote class="bq1">
-							 Même si vous ne voyez l’autre que toutes les deux semaines, on peut avoir une mauvaise influence, et encore plus via les téléphones qui sont maintenant omniprésents quelque soit l’âge des enfants. La Résidence Alternée ne changera rien à l’influence d’un des parents sur l’autre. Elle touche finalement plus à la stabilité des enfants qu’à celle des parents.<br>
+					<p> Finalement, de par cette inégalité sur les pensions, et les inégalités entre hommes et femmes lors de la procédure de divorce, on pose la question d’une possible « valeur de l’enfant ». En effet, une des critiques de la résidence alternée est qu’elle ferait perdre de l’argent aux femmes (à cause du calcul des pensions vu plus haut). Or, la pension alimentaire vise à contribuer à l’éducation de l’enfant, à son mode de vie. Ainsi, cette différence de pension alimentaire fixe une valeur monétaire à l’enfant.
+					</p>
 
-						 </blockquote>
-						 <br>
-						 <p> Du côté des associations de pères divorcés, la résidence alternée est aussi un sujet capital, et ce depuis très longtemps. Tous sont pour une plus grand part de résidence alternée dans les décisions des juges aux affaires familiales. On trouve ici leurs arguments pour la résidence alternée, mais aussi contre la situation juridique actuelle : </p>
-						 <br>
-						 <blockquote class = "bq3">
- 							<ul>
- 								<li>Une inégalité entre hommes et femmes au sein même de la justice. </li>
- 								<li>La résidence alternée permet aux pères de posséder des liens plus forts avec leurs enfants. </li>
- 								<li>La résidence alternée permet de rendre droit aux deux parents d’élever leurs enfants selon un principe d’équité. </li>
+					<p> Finalement, la résidence alternée est un choix difficile financièrement (notamment car il faut prendre en compte également la nécessité d’avoir deux logements de taille équivalente et beaucoup d’affaires en double), mais qui demande aussi un certain nombre d’autres conditions : que les logements des deux parents ne soient pas trop distants, etc… </p>
+
+					
+					<img src="images/graphe-paul1.jpg" class="photo_noeud" />
+					<br>
+
+					<p> On peut ainsi voir sur le graphique suivant (Ministère de la justice - 2012) que le taux de résidence alternée augmente de façon nette avec les revenus des parents. On trouve alors un nouveau sujet de controverse : les inégalités entre logements qui se reflètent sur la résidence des enfants. Pourquoi chaque couple n’a-t-il pas les mêmes possibilités de bénéficier de la résidence alternée?  </p>
+
+					<p class = "corpus-subtitle"> Les implications pour le couple :  </p>
+
+					<p> La résidence des enfants chez l’un des deux parents provoque irrémédiablement une inégalité du temps de présence chez l’autre parent, par rapport à une résidence alternée. Mais cette inégalité peut aussi se voir dans l’autre sens : l’un des deux parents va nécessairement se retrouver plus souvent seul (majoritairement le père). De ce constat, on comprend bien pourquoi il va être plus facile pour un père divorcé de « refaire sa vie » : il aura plus de temps. </p>
+
+					<p> À l’inverse, on peut lire que les femmes ont plus de mal pour « refaire leur vie » justement. Mais, et ce fut pointé du doigt par <a href="actors/valerie-bloch.html">Maitre Bloch</a> ainsi que par Maître Muller (Avocat, lui même en procédure de divorce), c’est justement parce que les pères ont souvent beaucoup plus de temps seuls qu’ils peuvent plus facilement recommencer une nouvelle vie. En effet, la résidence alternée va permettre aux deux parents d’être seuls une semaine sur deux, facilitant les changement dans leurs vies.
+					</p>
+
+					<p> C’est là encore une inégalité vis-à-vis des résidences usuelles et un sujet de controverse : quid de l’après-divorce pour la vie amoureuse des chacun des deux parents? En effet, lors du divorce, on va avouer l’échec d’une relation dont les enfants sont le totem. De ce fait, le choix de la résidence va directement lancer une inégalité entre les parents sur comment vivre avec ce divorce.  </p>
+
+					<b class = "corpus-title"> Les oppositions entre associations </b>
+
+					<p> L’opposition entre les parents n’est qu’une représentation de l’opposition homme-femmes, et de par cette opposition, il est intéressant de considérer la controverse de la résidence alternée au travers des associations féministes ainsi que des associations de pères divorcés.  </p>
+
+					<p> Depuis les débats en hémicycle autour de la Loi Latombe (<a target="_blank" href="http://videos.assemblee-nationale.fr/video.5276810_5a20687e71581.3eme-seance--residence-de-l-enfant-en-cas-de-separation-des-parents-suite-30-novembre-2017">Voir la vidéo à l'assemblée nationale</a>), de nombreuses associations se sont de nouveau exprimées sur la résidence alternée, ce n’est cependant pas un débat récent. Depuis 2002 et la nouvelle Loi Famille, la résidence alternée est sujet de controverse important parmis différentes associations. Parmi les arguments cités contre la résidence alternée, on trouve :  </p>
+					<br>
+					<blockquote class = "bq3">
+						<ul>
+							<li>Un rejet de l’intérêt supérieur de l’enfant, car la résidence alternée n’est pas toujours la bonne solution.  </li>
+							<li>Une perte financière pour les femmes via la transformation des pensions alimentaires. </li>
+							<li>Un rejet des mécanismes (multiples) des violences faites aux femmes. </li>
+							<li>Une demande masculiniste qui vise à rendre le père plus puissant.  </li>
 
 
+						</ul>
+					</blockquote>
+					<br>
+					<p> Nous reviendrons sur ce dernier point dans une troisième partie.  </p>
 
- 							</ul>
- 						 </blockquote>
-						 <br>
-						 <p> Ainsi, la résidence alternée cristallise un débat entre hommes et femmes, et aussi entre différentes associations. La où les associations féministes voient la résidence alternée comme un moyen pour le père de s’enrichir, d’appauvrir son ex-conjointe, les associations de pères y voient un moyen de rentre le divorce plus égalitaire entre les deux parents. </p>
-						 <br>
-						 <blockquote class="bq1">
-							 	 La proposition était à la fois décriée par les associations féministes d'un côté, et peu soutenue par les associations de pères de l'autre côté parce qu’ils la trouvaient trop timide<br>
-							<span class="author">Philippe Latombe</span>
-						</blockquote>
-						<br>
-						<b class = "corpus-title"> Les violences conjugales </b>
+					<p> En l’état actuel des choses, les critiques de la résidence alternée sont faites d’un point de vue financier, mais aussi sur le fait qu’elle permette à la relation de continuer, même après le divorce. Un père peut alors continuer à voir son ex-femme de façon très régulière. Cependant, d’après <a href="actors/valerie-bloch.html">Maitre Bloch</a>, rien ne change par rapport à une résidence chez l’un des deux parents.</p>
 
-						<p> Nous l’avons vu, la résidence alternée peut permettre à l’un des conjoints de continuer à avoir une mauvaise influence sur l’autre conjoint. Mais cette mauvaise influence peut être bien plus que ça. </p>
+					<br>
+					<blockquote class="bq1">
+						Même si vous ne voyez l’autre que toutes les deux semaines, on peut avoir une mauvaise influence, et encore plus via les téléphones qui sont maintenant omniprésents quelque soit l’âge des enfants. La Résidence Alternée ne changera rien à l’influence d’un des parents sur l’autre. Elle touche finalement plus à la stabilité des enfants qu’à celle des parents.<br>
 
-						<p> On a d'après <a href="https://www.interieur.gouv.fr/Archives/Archives-des-communiques-de-presse/2016-Communiques/Determination-totale-du-Gouvernement-pour-faire-reculer-les-violences-au-sein-du-couple">le ministère de l'intérieur : </a></p>
-						<br>
-						<br>
-						<div class="table-title">
-							<h3>Les violences conjugales en France </h3>
-						</div>
-						<table class="table-fill">
-							<thead>
-								<tr>
-									<th class="text-left">Femmes tuées par leur conjoint</th>
-									<th class="text-left">Femmes qui portent plainte contre leur conjoint pour violences physiques</th>
-								</tr>
-							</thead>
-							<tbody class="table-hover">
-								<tr>
-									<td class="text-left">122 en 2015</td>
-									<td class="text-left">14% en 2015</td>
-								</tr>
+					</blockquote>
+					<br>
+					<p> Du côté des associations de pères divorcés, la résidence alternée est aussi un sujet capital, et ce depuis très longtemps. Tous sont pour une plus grand part de résidence alternée dans les décisions des juges aux affaires familiales. On trouve ici leurs arguments pour la résidence alternée, mais aussi contre la situation juridique actuelle : </p>
+					<br>
+					<blockquote class = "bq3">
+						<ul>
+							<li>Une inégalité entre hommes et femmes au sein même de la justice. </li>
+							<li>La résidence alternée permet aux pères de posséder des liens plus forts avec leurs enfants. </li>
+							<li>La résidence alternée permet de rendre droit aux deux parents d’élever leurs enfants selon un principe d’équité. </li>
 
 
 
+						</ul>
+					</blockquote>
+					<br>
+					<p> Ainsi, la résidence alternée cristallise un débat entre hommes et femmes, et aussi entre différentes associations. La où les associations féministes voient la résidence alternée comme un moyen pour le père de s’enrichir, d’appauvrir son ex-conjointe, les associations de pères y voient un moyen de rentre le divorce plus égalitaire entre les deux parents. </p>
+					<br>
+					<blockquote class="bq1">
+						La proposition était à la fois décriée par les associations féministes d'un côté, et peu soutenue par les associations de pères de l'autre côté parce qu’ils la trouvaient trop timide<br>
+						<span class="author">Philippe Latombe</span>
+					</blockquote>
+					<br>
+					<b class = "corpus-title"> Les violences conjugales </b>
 
-							</tbody>
-						</table>
-						<p class="note-sous-tableau">
-							<b>Source:</b> <a href="https://www.interieur.gouv.fr/Archives/Archives-des-communiques-de-presse/2016-Communiques/Determination-totale-du-Gouvernement-pour-faire-reculer-les-violences-au-sein-du-couple"> Ministère de l'intérieur </a><br>
-						</p>
-						<br>
-						<br>
+					<p> Nous l’avons vu, la résidence alternée peut permettre à l’un des conjoints de continuer à avoir une mauvaise influence sur l’autre conjoint. Mais cette mauvaise influence peut être bien plus que ça. </p>
 
-							<p> C’est un sujet extrêmement grave, les chiffres sont très élevés et ils sont liés à un tabou qui se reflète dans les 86% de femmes qui ne portent pas plainte : </p>
-							<br>
-							<blockquote class="bq1">
-							En ce qui concerne les violences physiques, de nombreuses personnes ne portent pas plainte. C’est très difficile à prouver de surcroit (il y a eu une relation d’amour on peut éprouver de la honte). Il ne faut pas négliger les violences psychologiques qui sont encore plus difficiles à prouver (liées à la société qui est devenu violente, l’objectif est d’être beau et hyper performant). Il y a beaucoup de violences psychologiques notamment à l’égard des femmes qui restent s’occuper de leurs enfants (tu ne gagnes pas ta vie, tu n’y connais rien, etc.). C’est une violence qui devient extrêmement difficile à vivre avec le temps. C’est très difficile à prouver et les femmes n’ont pas toujours la force de rentrer dans une longue procédure de divorce.	<br>
- 							<span class="author">Valérie Bloch</span>
- 						</blockquote>
-						<br>
-						<p> La question de la résidence alternée est donc directement reliée à la question de la relation qui subsiste entre les deux conjoints. Cette résidence alternée va-t-elle permettre à un homme de continuer à manipuler, abuser ou frapper son ex-conjointe? On rentre ici dans le travail du juge aux affaires familiales, mais dans l’hypothèse où une telle situation n’est pas décelée, il est évident qu’à travers les différentes résidences, un père malveillant n’aura pas le même impact sur son ex-conjointe.
-						</p>
+					<p> On a d'après <a target="_blank" href="https://www.interieur.gouv.fr/Archives/Archives-des-communiques-de-presse/2016-Communiques/Determination-totale-du-Gouvernement-pour-faire-reculer-les-violences-au-sein-du-couple">le ministère de l'intérieur : </a></p>
+					<br>
+					<br>
+					<div class="table-title">
+						<h3>Les violences conjugales en France </h3>
+					</div>
+					<table class="table-fill">
+						<thead>
+							<tr>
+								<th class="text-left">Femmes tuées par leur conjoint</th>
+								<th class="text-left">Femmes qui portent plainte contre leur conjoint pour violences physiques</th>
+							</tr>
+						</thead>
+						<tbody class="table-hover">
+							<tr>
+								<td class="text-left">122 en 2015</td>
+								<td class="text-left">14% en 2015</td>
+							</tr>
 
-						<p> C’est donc un point extrêmement délicat, et surtout absolument important de par sa gravité. Ainsi, la question de la résidence alternée se révèle comme multi-domaine. Elle touche à la place de la femme dans la société, à sa sécurité, mais aussi aux inégalités entre les ex-conjoints face à la garde de leurs enfants. </p>
+
+
+
+						</tbody>
+					</table>
+					<p class="note-sous-tableau">
+						<b>Source:</b> <a target="_blank" href="https://www.interieur.gouv.fr/Archives/Archives-des-communiques-de-presse/2016-Communiques/Determination-totale-du-Gouvernement-pour-faire-reculer-les-violences-au-sein-du-couple"> Ministère de l'intérieur </a><br>
+					</p>
+					<br>
+					<br>
+
+					<p> C’est un sujet extrêmement grave, les chiffres sont très élevés et ils sont liés à un tabou qui se reflète dans les 86% de femmes qui ne portent pas plainte : </p>
+					<br>
+					<blockquote class="bq1">
+						En ce qui concerne les violences physiques, de nombreuses personnes ne portent pas plainte. C’est très difficile à prouver de surcroit (il y a eu une relation d’amour on peut éprouver de la honte). Il ne faut pas négliger les violences psychologiques qui sont encore plus difficiles à prouver (liées à la société qui est devenu violente, l’objectif est d’être beau et hyper performant). Il y a beaucoup de violences psychologiques notamment à l’égard des femmes qui restent s’occuper de leurs enfants (tu ne gagnes pas ta vie, tu n’y connais rien, etc.). C’est une violence qui devient extrêmement difficile à vivre avec le temps. C’est très difficile à prouver et les femmes n’ont pas toujours la force de rentrer dans une longue procédure de divorce.	<br>
+						<span class="author">Valérie Bloch</span>
+					</blockquote>
+					<br>
+					<p> La question de la résidence alternée est donc directement reliée à la question de la relation qui subsiste entre les deux conjoints. Cette résidence alternée va-t-elle permettre à un homme de continuer à manipuler, abuser ou frapper son ex-conjointe? On rentre ici dans le travail du juge aux affaires familiales, mais dans l’hypothèse où une telle situation n’est pas décelée, il est évident qu’à travers les différentes résidences, un père malveillant n’aura pas le même impact sur son ex-conjointe.
+					</p>
+
+					<p> C’est donc un point extrêmement délicat, et surtout absolument important de par sa gravité. Ainsi, la question de la résidence alternée se révèle comme multi-domaine. Elle touche à la place de la femme dans la société, à sa sécurité, mais aussi aux inégalités entre les ex-conjoints face à la garde de leurs enfants. </p>
 
 
 
@@ -422,15 +439,15 @@
 		</div>
 	</div>
 	<div id="next_button_container">
-	<a id="parcours_next">
-  		<div class="button-fill grey">
-    		<div class="button-text">étape suivante</div>
-   			<div class="button-inside">
-      				<div class="inside-text"> Bien-être de l'enfant </div>
-   			</div>
-  		</div>
-  	</a>
-  </div>
+		<a id="parcours_next">
+			<div class="button-fill grey">
+				<div class="button-text">étape suivante</div>
+				<div class="button-inside">
+					<div class="inside-text"> Bien-être de l'enfant </div>
+				</div>
+			</div>
+		</a>
+	</div>
 
 	<footer id="contro-footer" role="contentinfo">
 		<div class="container">
@@ -439,7 +456,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-					<small >&copy; 2018 Mines ParisTech. Tous droits réservés.</small>
+						<small >&copy; 2018 Mines ParisTech. Tous droits réservés.</small>
 					</p>
 				</div>
 			</div>
@@ -449,49 +466,66 @@
 
 
 
-	</div>
-	<div id="transition">
-		<p class="text-transition">
-			L’opposition entre les parents peut être destructrice pour l’enfant, devenu objet de discorde. En réalité, au coeur du débat français sur la résidence alternée, une question principale demeure : quel mode de garde permet à l’enfant de s’épanouir et de se développer dans les meilleures conditions ?
+</div>
+<div id="transition">
+	<p class="text-transition">
+		<span class="close_window">✖</span>
+		L’opposition entre les parents peut être destructrice pour l’enfant, devenu objet de discorde. En réalité, au coeur du débat français sur la résidence alternée, une question principale demeure : quel mode de garde permet à l’enfant de s’épanouir et de se développer dans les meilleures conditions ?
+
+
+
+
+		<div id="next_previous">
+			<div id="previous_button_container">
+				<a href="procedure-judiciaire.html" id="parcours_previous">
+					<div class="button-fill grey">
+						<div class="button-text">étape précédente</div>
+						<div class="button-inside">
+							<div class="inside-text">Nouvelle législation</div>
+						</div>
+					</div>
+				</a>
+			</div>
 			<div id="next_button_container_bis">
 				<a href="bien-etre-de-lenfant.html" id="parcours_next_bis">
-  				<div class="button-fill grey">
-    			<div class="button-text">étape suivante</div>
-   				<div class="button-inside">
-      				<div class="inside-text">Bien être de l'enfant</div>
-   				</div>
-  			</div>
-  			</a>
-  			</div>
-		</p>
+					<div class="button-fill grey">
+						<div class="button-text">étape suivante</div>
+						<div class="button-inside">
+							<div class="inside-text">Bien être de l'enfant</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</p>
 
-	</div>
+</div>
 
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-	<script src="js/secondary.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+<script src="js/secondary.js"></script>
 
-	<script src="js/acteurs_petit_cercle.js"></script>
+<script src="js/acteurs_petit_cercle.js"></script>
 
-	</body>
+</body>
 </html>
