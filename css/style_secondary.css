@@ -100,7 +100,7 @@
 }
 
 #navigate{
-  margin-top:150px;
+  margin-top:0px;
 }
 
 #img_scroll{
@@ -1017,6 +1017,7 @@ p.actor_description{
 #navigate{
   margin-right: auto;
   margin-left:auto;
+  padding-bottom:100px;
 }
 
 .navigate_freely_button{
@@ -1029,7 +1030,8 @@ p.actor_description{
   display:inline-block;
   padding:10px;
   background:#445561;
-  width:300px;
+  opacity:0.9;
+  width:200px;
 
   margin:10px;
   color:white;
