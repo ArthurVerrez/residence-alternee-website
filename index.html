@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Résidence alternée | Accueil</title>
@@ -9,7 +9,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
+	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -52,34 +52,51 @@
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
-	<![endif]-->
+<![endif]-->
 
-	</head>
-	<body>
+</head>
+<body>
 
 	<div class="contro-loader"></div>
 
 	<div id="page">
-	<nav class="contro-nav" role="navigation">
-		<div class="top-menu scroll_appear">
-			<div class="container">
+		<nav class="contro-nav" role="navigation">
+			<div class="top-menu scroll_appear">
+
+				<div class="container">
+
 					<div class="col-md-14 menu-1">
+						<div class="toggler">
+								<input id="toggler-1" name="toggler-1" type="checkbox" value="1"/>
+								<label for="toggler-1">
+									<svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 130.2 130.2">
+										<polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5 "></polyline>
+									</svg>
+									<svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="65 0 130.2 130.2">
+										<line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+										<line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+									</svg>
+								</label>
+						</div>
+
 						<ul>
 							<li id="bouton_parcours_menu">
-								<a href="index.html?p=parcours-guide">
-  									<div class="button-fill grey">
-    									<div class="button-text">Parcours Guidé</div>
-   										<div class="button-inside">
-      										<div class="inside-text">Commencer</div>
-   										</div>
-  									</div>
-  								</a>
-      						</li>
-      					<div id="menu_no_button">
-							<li class="active"><a href="index.html">Accueil</a></li>
-							<li ><a href="procedure-judiciaire.html">Procédure judiciaire</a></li>
-							<li><a href="nouvelle-legislation.html">Nouvelle législation ?</a></li>
-							<li><a href="opposition-entre-parents.html">Opposition entre parents</a></li>
+								<a href="procedure-judiciaire.html?p=parcours-guide">
+									<div class="button-fill grey">
+										<div class="button-text">Parcours Guidé</div>
+										<div class="button-inside">
+											<div class="inside-text">Commencer</div>
+										</div>
+									</div>
+								</a>
+							</li>
+
+
+							<div id="menu_no_button">
+								<li class="active"><a href="index.html">Accueil</a></li>
+								<li ><a href="procedure-judiciaire.html">Procédure judiciaire</a></li>
+								<li><a href="nouvelle-legislation.html">Nouvelle législation ?</a></li>
+								<li><a href="opposition-entre-parents.html">Opposition entre parents</a></li>
 							<!--<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -90,27 +107,31 @@
 								</ul>
 							</li>-->
 							<li><a href="bien-etre-de-lenfant.html">Bien-être de l'enfant</a></li>
+							<li><a id="about-us" href="qui-sommes-nous.html"><div class="circle_around"><p>i</p></div></a></li>
 						</div>
 
-							<!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
-						</ul>
-					</div>
+						<!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
+					</ul>
+
+
+				</div>
+
 
 			</div>
 		</div>
 	</nav>
 
-
-		<div class="side-bar-inside2">
+	<div class="side-bar retract scroll_appear2 small-side-bar">
+		<div class="side-bar-inside">
+			<p class="vertical_indication">Plus d'informations</p>
 			<ul>
 				<li>
-					<a href="acteurs.html?noeud=3" class="button-side-bar" id="side_bar_actor">
+					<a href="acteurs.html?noeud=0" class="button-side-bar" id="side_bar_actor">
 						<div class="button-fill grey">
 							<div class="button-text">Acteurs</div>
 							<div class="button-inside">
 								<div class="inside-text">Acteurs</div>
 							</div>
-
 						</div>
 
 
@@ -131,39 +152,67 @@
 				</li>
 			</ul>
 		</div>
+	</div>
+
+	<div class="scroll_appear3 side-bar-left">
+		<div class="side-bar-left-inside">
+
+			<ul class="parcours_ul">
+				<a href="procedure-judiciaire.html"><li>
+					Procédure judiciaire
+				</li></a>
+				<a href="nouvelle-legislation.html"><li>
+					Nouvelle législation ?
+				</li></a>
+				<a href="opposition-entre-parents.html"><li>
+					Opposition entre parents
+				</li></a>
+				<a href="bien-etre-de-lenfant.html"><li>
+					Bien être de l'enfant
+				</li></a>
+			</ul>
+		</div>
+	</div>
+
 
 
 	<aside id="contro-hero" class="js-fullheight">
 
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/father_daughter.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container">
-		   			<div class="row">
-			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<h1>La residence alternee</h1>
-			   					<span class="line"></span>
-			   					<h2 class="subtitle">La résidence alternée représente-t-elle la solution la plus équilibrée pour les enfants et les parents ?</h2>
+				<li style="background-image: url(images/family.jpg);">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+								<div class="slider-text-inner">
+									<h1>La residence alternee</h1>
+									<span class="line"></span>
+									<h2 class="subtitle">La résidence alternée représente-t-elle la solution la plus équilibrée pour les enfants et les parents ?</h2>
 									<div id="navigate">
-									<p><div class="button-fill blue"><a class="button-text" id="main-button-parcours" href="index.html?p=parcours-guide">Parcours Guidé</a></div><br><br>
+										<a class="navigate_parcours">
+										<div class="nav_buttons">
+										Parcours guidé
+										</div>
+										</a>
+										<a class="navigate_freely" href="#">
+										<div class="nav_buttons">
+											Parcours libre
+										</div>
+										</a><br><br>
+											<a class="navigate_freely_button">
+												<img  id="img_scroll" border="0" alt="W3Schools" src="images/ui/arrow_down.png">
+											</a>
+										</p>
+									</div>
 
-
-									<a class="navigate_freely" href="#">ou naviguer librement</a><br>
-									<a href="#" class="navigate_freely_button">
-										<img  id="img_scroll" border="0" alt="W3Schools" src="images/ui/arrow_down.png">
-									</a>
-									</p>
 								</div>
-
-			   				</div>
-			   			</div>
-			   		</div>
-		   		</div>
-		   	</li>
-		  	</ul>
-	  	</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 
 	</aside>
 
@@ -175,21 +224,24 @@
 					<h2 class="text-center corpus-title" >La résidence alternée en France</h2>
 
 					<p>
-						Lors de la séparation de deux parents, l’un des sujets à être traité en priorité est celui de la modification de la vie des enfants. Il existe différentes possibilités, comme la garde exclusive, les droits de visite ou la résidence alternée.
+						Après un divorce, l’organisation de la vie des enfants représente l’un des sujets prioritaires pour les parents. Plusieurs possibilités s’offrent alors aux conjoints : la garde exclusive, le droit de visite élargi ou la résidence alternée. Cette dernière possibilité correspond à une résidence partagée entre les deux parents : l’enfant a un domicile chez chacun des parents. En cas de désaccord entre les conjoints, le juge s’occupant de la séparation doit évaluer la meilleure solution pour l’enfant et les parents.
+					</p>
+					<p>
+
+						En effet, en cas de désaccord, les parents se lancent dans une procédure judiciaire longue et parfois compliquée. Les motifs des décisions des juges aux affaires familiales (JAF) ont été grandement contestés par les principales associations de défense des pères comme SOS Papa ou le Collectif de la Grue Jaune qui prônent même la déjudiciarisation des affaires familiales.
+					</p>
+					<p>
+						Le député MODEM Philippe Latombe a donc décidé de rédiger une proposition de loi pour améliorer la procédure actuelle en donnant la double résidence à l’enfant juste après le divorce. Ce texte a engendré beaucoup de réactions notamment de la part d’associations féministes comme Osez Le Féminisme ! ou Les Effronté.es qui ont insisté sur le danger d’une possible généralisation de la résidence alternée pour les femmes battues.
 					</p>
 
 					<p>
-						Cette dernière possibilité est une organisation de l'hébergement de l'enfant mineur dans laquelle les parents ne partagent pas le même domicile. L’enfant passe alors une partie de son temps chez l’un des parents, puis chez l’autre. On parle souvent de résidence alternée à partir du moment où l’enfant passe au minimum 35% de son temps chez les deux parents.
+						En réalité, une véritable opposition entre les conjoints existe dans un débat qui semble désormais genré. Dans les médias, associations féministes et associations de défense des pères se font face au sujet des inégalités économiques et judiciaires engendrées par les différents modes de garde.
 					</p>
 					<p>
-						Le juge s’occupant de la séparation doit donc évaluer, dans un premier temps, la meilleure solution pour l’enfant mais également pour les parents.
-					</p>
-					<p>
-						Récemment, le député Philippe Latombe a fait une proposition de loi très controversée qui aurait pour but de désigner les deux résidences parentales comme résidences administratives de l’enfant, facilitant alors le choix de la résidence alternée. Cette proposition fut fortement contestée par de nombreuses associations féministes mettant en évidence le problème soulevé pour les femmes battues. En effet, ces dernières dénoncent une possible continuation de la violence conjugale par le biais de la résidence alternée. Par la suite, des associations scientifiques se sont opposées à la résidence alternée pour les enfants trop jeunes, ces dernières affirment en effet que l’enfant serait trop bousculé par le changement perpétuel de résidence et qu’il perdrait également toute notion fixe d’un encadrement parental. Cependant, des associations masculinistes encouragent ce changement, ainsi que d’autres scientifiques mettant en exergue les bienfaits de la résidence alternée.
-					</p>
-					<p>
-						Il semblerait cependant que cette proposition de loi soit mal interprétée, mais qu’elle ressort tout simplement de nombreux problèmes sous-jacents sur le sujet, et la recherche de réponse n’est pas aisée à cause de facteurs comme la difficulté d’évaluer le bonheur (ou d’autres émotionnels) d’une personne, notamment un enfant.
-					</p>
+						Par ailleurs, même au sein des experts (pédo-psychiatres, psychanalystes…), la question du bien-être de l’enfant en résidence alternée est encore au centre des recherches. L’ancienne école de Golse et Berger opposée à cette organisation de la famille est confrontée  à une nouvelle vague dans laquelle s’inscrit Serge Hefez par exemple.
+					</p> 
+
+
 
 
 				</div>
@@ -198,15 +250,15 @@
 	</div>
 
 	<div id="next_button_container">
-	<a id="parcours_next">
-  		<div class="button-fill grey">
-    		<div class="button-text">Parcours guidé</div>
-   			<div class="button-inside">
-      				<div class="inside-text">Procédure judiciaire</div>
-   			</div>
-  		</div>
-  	</a>
-  </div>
+		<a id="parcours_next">
+			<div class="button-fill grey">
+				<div class="button-text">Parcours guidé</div>
+				<div class="button-inside">
+					<div class="inside-text">Procédure judiciaire</div>
+				</div>
+			</div>
+		</a>
+	</div>
 
 	<footer id="contro-footer" role="contentinfo">
 		<div class="container">
@@ -215,7 +267,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-					<small >&copy; 2018 Mines ParisTech. Tous droits réservés. (Not Wordpress)</small>
+						<small >&copy; 2018 Mines ParisTech. Tous droits réservés. (Not Wordpress)</small>
 					</p>
 				</div>
 			</div>
@@ -224,50 +276,58 @@
 	</footer>
 
 
-	</div>
+</div>
 
-	<div id="transition">
-		<p class="text-transition">
-			Au moment de la séparation, les conjoints sont confrontés à de nombreuses problématiques parmi lesquelles la garde de l’enfant représente sûrement la plus sensible. En cas de désaccord des parents, ces derniers doivent se lancer dans une procédure judiciaire parfois complexe...
+<div id="transition">
+	<p class="text-transition">
+		<span class="close_window">✖</span>
+		Au moment de la séparation, les conjoints sont confrontés à de nombreuses problématiques parmi lesquelles la garde de l’enfant représente sûrement la plus sensible. En cas de désaccord des parents, ces derniers doivent se lancer dans une procédure judiciaire parfois complexe...
+
+
+		<div id="next_previous">
+			
 			<div id="next_button_container_bis">
 				<a href="procedure-judiciaire.html?p=parcours-guide" id="parcours_next_bis">
-  				<div class="button-fill grey">
-    			<div class="button-text">étape suivante</div>
-   				<div class="button-inside">
-      				<div class="inside-text">Procédure judiciaire</div>
-   				</div>
-  			</div>
-  			</a>
-  			</div>
-		</p>
+					<div class="button-fill grey">
+						<div class="button-text">étape suivante</div>
+						<div class="button-inside">
+							<div class="inside-text">Procédure judiciaire</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</p>
 
-	</div>
-
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-	<script src="js/secondary.js"></script>
+</div>
 
 
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+<script src="js/secondary.js"></script>
 
-	</body>
+<script src="js/acteurs_petit_cercle.js"></script>
+
+
+
+</body>
 </html>

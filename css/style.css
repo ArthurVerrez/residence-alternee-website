@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .contro-nav .top-menu, .contro-nav .top-menu-appeared {
   z-index:100;
   padding: 0;
+  position:absolute;
   
   background-color:rgba(255,255,255,1);
   width:100%;
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5, h6, figure {
    }
 
   .contro-nav .top-menu {
-    position:fixed;
+  position:fixed;
   opacity: 0;
   visibility: hidden;
   }
@@ -328,7 +329,8 @@ h1, h2, h3, h4, h5, h6, figure {
         display: table-cell;
         vertical-align: middle;
         min-height: 700px;
-        background-color:rgba(0,0,0,0.5); }
+        background-color:rgba(0,0,0,0.8);
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.5) }
         #contro-hero .flexslider .slider-text > .slider-text-inner h1, #contro-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
@@ -349,11 +351,12 @@ h1, h2, h3, h4, h5, h6, figure {
             #contro-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 30px; } }
         #contro-hero .flexslider .slider-text > .slider-text-inner h2 {
-          font-size: 1.5em;
+          font-size: 1.3em;
           line-height: 1.5;
           margin-bottom: 30px;
           font-family: 'Lora', serif;
-          padding:20px; }
+          padding:25px;
+           }
         #contro-hero .flexslider .slider-text > .slider-text-inner .heading-section {
           font-size: 50px; }
         #contro-hero .flexslider .slider-text > .slider-text-inner .btn {
