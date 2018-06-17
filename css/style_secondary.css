@@ -1028,18 +1028,19 @@ p.actor_description{
 .nav_buttons{
   display:inline-block;
   padding:10px;
-  background:#adadad;
+  background:#445561;
   width:300px;
 
   margin:10px;
   color:white;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor:pointer;
   font-size:13px;
 }
 
 .nav_buttons:hover{
-  background:grey;
+  color:#445561;
+  background:white;
 }
