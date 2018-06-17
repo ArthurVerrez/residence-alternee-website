@@ -21,7 +21,7 @@
 
 - plan détaillé sur la gauche : 0%
 
-##- noeud plus espacé : 100%
+##- noeud plus espacé : 100%s
 
 - disclaimer pour les homosexuels : 0%
 
