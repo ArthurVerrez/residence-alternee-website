@@ -130,7 +130,7 @@
   height:25em;
   overflow:hidden;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
-  
+
 
 }
 
@@ -283,7 +283,7 @@
 #next_button_container_bis, #previous_button_container{
   display:inline-block;
   font-family: "Lato", sans-serif;
-  
+
 }
 
 #next_button_container{
@@ -304,12 +304,12 @@
   white-space: nowrap;
   font-family: 'Lato', sans-serif;
   cursor:pointer;
-  
+
 
 }
 
 .inside-text{
-  
+
   white-space: nowrap;
   font-size: 0.8vw;
 }
@@ -369,7 +369,7 @@
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
-  
+
 
 
   width:40%;
@@ -729,8 +729,8 @@ blockquote li{
 /* image noeud */
 
 img.photo_noeud, img.photo_noeud_big{
-  
-  width:70%;
+
+  width:90%;
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -838,7 +838,7 @@ p.actor_description{
   top:50%;
   right:10px;
   transform: translateY(-50%);
-  
+
   text-align:center;
   vertical-align: middle;
   text-transform: none;
