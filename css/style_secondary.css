@@ -367,7 +367,10 @@
   background:white;
   position:absolute;
   left:50%;
-  transform:translate(-50%,0);
+  top:50%;
+  transform:translate(-50%,-50%);
+  
+
 
   width:40%;
 
@@ -547,6 +550,8 @@ blockquote li{
   text-align:center;
   height:75%;
   transform:translate(0,-50%);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+
 }
 
 .block_acteurs a{
@@ -563,7 +568,7 @@ blockquote li{
 
 .block_acteurs h2{
   text-align:center;
-  font-family: "Roboto Light", sans-serif;
+  font-family: Arial, sans-serif;
 
   color: white;
   font-size:20px;
