@@ -130,7 +130,8 @@
   height:25em;
   overflow:hidden;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
-  
+
+
 
 }
 
@@ -283,7 +284,7 @@
 #next_button_container_bis, #previous_button_container{
   display:inline-block;
   font-family: "Lato", sans-serif;
-  
+
 }
 
 #next_button_container{
@@ -304,12 +305,12 @@
   white-space: nowrap;
   font-family: 'Lato', sans-serif;
   cursor:pointer;
-  
+
 
 }
 
 .inside-text{
-  
+
   white-space: nowrap;
   font-size: 0.8vw;
 }
@@ -369,7 +370,7 @@
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
-  
+
 
 
   width:40%;
@@ -407,6 +408,11 @@ a.active{
   vertical-align: middle;
   height:100%;
   font-family: georgia, "times new roman", times, serif;
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+
 }
 .scroll_appear, .scroll_appear2, .scroll_appear3{
   visibility: hidden;
@@ -729,7 +735,7 @@ blockquote li{
 /* image noeud */
 
 img.photo_noeud, img.photo_noeud_big{
-  
+
   width:70%;
   display:block;
   margin-left: auto;
@@ -838,7 +844,7 @@ p.actor_description{
   top:50%;
   right:10px;
   transform: translateY(-50%);
-  
+
   text-align:center;
   vertical-align: middle;
   text-transform: none;
@@ -1051,3 +1057,35 @@ p.actor_description{
   color:#445561;
   background:white;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  #menu_no_button{
+    margin-left:0px;
+  }
+
+  .retract{
+    width:25px;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .contro-nav-toggle {
+    display: block;
+    position:fixed; }
+
+  #contro-offcanvas{
+    position:fixed;
+  }
+
+
+   }

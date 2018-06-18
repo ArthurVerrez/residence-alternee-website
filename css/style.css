@@ -64,12 +64,12 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index:100;
   padding: 0;
   position:absolute;
-  
+
   background-color:rgba(255,255,255,1);
   width:100%;
   font-family: 'Lato', sans-serif;
-  
-  font-size:15px;
+
+  font-size:1em;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
   margin-bottom:0;
 
@@ -101,8 +101,14 @@ h1, h2, h3, h4, h5, h6, figure {
 .contro-nav a {
   padding: 5px 10px;
   color: #000; }
+@media (max-width: 1210px) {
+  .contro-nav .top-menu, .contro-nav .top-menu-appeared {
+    font-size:0.8em;
+  }
 
-@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 1000px) {
   .contro-nav .menu-1 {
     display: none; } }
 
@@ -222,7 +228,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .contro-video {
   overflow: hidden; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1000px) {
     .contro-video {
       height: 450px; } }
   .contro-video a {
@@ -347,7 +353,7 @@ h1, h2, h3, h4, h5, h6, figure {
           text-transform: uppercase;
           letter-spacing: 1px;
           font-family: 'Lora', serif; }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 1000px) {
             #contro-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 30px; } }
         #contro-hero .flexslider .slider-text > .slider-text-inner h2 {
@@ -396,7 +402,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   clear: both;
   font-family: 'Roboto', sans-serif;  }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     #contro-about,
     #contro-practice,
     #contro-testimonial,
@@ -470,7 +476,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #contro-consult .video,
 #contro-consult .choose {
   display: inline-block; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     #contro-content .video, #contro-content .choose,
     #contro-consult .video,
     #contro-consult .choose {
@@ -542,7 +548,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   position: relative;
   overflow: hidden; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .third-col {
       width: 100% !important; } }
   .third-col h2 {
@@ -711,7 +717,7 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 70%;
     position: relative;
     padding: 0; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1000px) {
       #contro-testimonial .testimony-slide blockquote {
         width: 100%; } }
 
@@ -829,7 +835,7 @@ h1, h2, h3, h4, h5, h6, figure {
     transition: 0.5s; }
     .contro-blog > a img {
       width: 100%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     .contro-blog {
       width: 100%; } }
   .contro-blog .blog-text {
@@ -871,7 +877,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #contro-footer .contro-footer-links {
     padding: 0;
     margin: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       #contro-footer .contro-footer-links {
         margin-bottom: 30px; } }
     #contro-footer .contro-footer-links li {
@@ -890,7 +896,7 @@ h1, h2, h3, h4, h5, h6, figure {
     padding-bottom: 15px; }
   #contro-footer .contro-widget {
     margin-bottom: 30px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       #contro-footer .contro-widget {
         text-align: left; } }
   #contro-footer .copyright .block {
@@ -900,7 +906,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   height: 500px;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     #map {
       height: 200px; } }
 
@@ -924,7 +930,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1000px) {
     #contro-offcanvas {
       display: block; } }
   .offcanvas #contro-offcanvas {
@@ -1022,7 +1028,7 @@ h1, h2, h3, h4, h5, h6, figure {
   text-decoration: none;
   top: 25px !important; }
   .contro-nav-toggle.active i::before, .contro-nav-toggle.active i::after {
-    background: #444; }
+    background: white; }
   .contro-nav-toggle:hover, .contro-nav-toggle:focus, .contro-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -1031,11 +1037,11 @@ h1, h2, h3, h4, h5, h6, figure {
     display: inline-block;
     width: 25px;
     height: 2px;
-    color: #252525;
+    color: white;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #252525;
+    background: white;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
@@ -1101,9 +1107,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 44px;
   z-index: 2001;
   border-bottom: none !important; }
-  @media screen and (max-width: 768px) {
-    .contro-nav-toggle {
-      display: block; } }
+  
 
 .btn {
   margin-right: 4px;
