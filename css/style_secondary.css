@@ -131,6 +131,10 @@
   overflow:hidden;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b9a6125babd02cd6b93c028ad287f9b5bb56869b
 
 }
 
@@ -407,6 +411,11 @@ a.active{
   vertical-align: middle;
   height:100%;
   font-family: georgia, "times new roman", times, serif;
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+
 }
 .scroll_appear, .scroll_appear2, .scroll_appear3{
   visibility: hidden;
@@ -730,7 +739,11 @@ blockquote li{
 
 img.photo_noeud, img.photo_noeud_big{
 
+<<<<<<< HEAD
   width:90%;
+=======
+  width:70%;
+>>>>>>> b9a6125babd02cd6b93c028ad287f9b5bb56869b
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -1051,3 +1064,35 @@ p.actor_description{
   color:#445561;
   background:white;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  #menu_no_button{
+    margin-left:0px;
+  }
+
+  .retract{
+    width:25px;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .contro-nav-toggle {
+    display: block;
+    position:fixed; }
+
+  #contro-offcanvas{
+    position:fixed;
+  }
+
+
+   }
