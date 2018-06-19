@@ -1089,3 +1089,15 @@ p.actor_description{
    }
 
 
+.corpus a.reference{
+  font-size: .75em;
+  line-height: .75em;
+  vertical-align:super;
+  text-decoration: none;
+  font-style:normal;
+}
+
+a.reference:hover{
+  text-decoration: underline;
+  font-style:italic;
+}
